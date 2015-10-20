@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录页</title>
+<link href="css/tBase.css" rel="stylesheet" type="text/css" />
+<link href="css/login.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="mainbg">
+	<div class="main">
+    	<div class="head">
+        	<a href="index.html" class="logo fl" ></a>
+            <h1 class="h1 fl">登录</h1>
+        </div>   
+        
+        <div class="container">
+        	 <div class="login">
+                <a class="forget_p" href="">忘记密码？</a>
+            	<p class="login_fl fl"><img src="images/login/img.jpg" /></p>
+                 <div class="login_fr fr">
+                	<div class="login_input dl1">
+                    	<label>邮箱/已验证手机</label>
+                        <div class="text_div"><input type="text" class="text" /><i class="text_divi1"></i></div>
+                        <div class="error_div">请输入邮箱/已验证手机</div>
+                    </div>
+                    <div class="login_input dl2">
+                    	<label>密码</label>
+                        <div class="text_div"><input type="password" class="text" /><i class="text_divi2"></i></div>
+                        <div class="error_div">请输入密码</div>
+                    </div>
+                    <div class="login_input dl3">
+                    	<input  type="checkbox" />
+                        <span class="fl">自动登录<a href="javaScript:;" class="ml15">忘记密码？</a></span>
+                        <span class="fr">新用户，<a href="javaScript:;">免费注册&gt;</a></span>
+                    </div>
+                    <div class="login_input dl4"><input type="submit"  id="btnSubmit" value=" " /></div>
+                </div >
+            </div >
+        </div>
+        
+        <div class="cl lg_foot foot textC">
+        	<a href="" target="_blank">关于我们</a>  |  <a href="" target="_blank">隐私申明</a>  |  
+            <a href="" target="_blank">成为供应商</a>  |  <a href="" target="_blank">投诉与建议</a>  |  
+            <a href="" target="_blank">醉品社区</a>  |  <a href="" target="_blank">友情链接</a>
+            <br/>Copyright 2010 - 2014 oteao.com All Rights Reserved 
+            <br/>闽ICP备10200063号-1
+    	</div>
+    </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$(".text_div").click(function(){
+			$(".text_div").removeClass("checked");
+			$(this).addClass("checked");
+		});
+		
+		$(document.body).delegate('.text','blur',function(){
+			$(".text_div").removeClass("checked");
+			var val=$(this).val();
+			 if(!val){
+				 $(this).parent().parent().addClass("error");
+			 }else{
+				 $(this).parent().parent().removeClass("error");
+			 }
+		});
+		
+		 $('#btnSubmit').click(function(){
+			  var suc=true;//是否验证通过
+			   $('.text').each(function(){
+				 var obj=$(this).val();
+				 if(!$(this).val()){
+					 $(this).parent().parent().addClass("error");
+					 suc=false;
+				 }else{
+					$(this).parent().parent().removeClass("error");
+				 }
+		   	  });
+			  
+		   if (suc) {
+			alert('可以提交');
+		  	//提交动作写在这里
+		  };
+	  });
+		
+    });
+</script>

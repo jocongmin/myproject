@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/*member_address_right_column*/
+
+.member_title {
+    height: 35px;
+    font-size: 18px;
+    color: #444;
+    font-family: "microsoft yahei";
+    position: relative;
+}
+
+.member_address_main p {
+    float: left;
+    overflow: hidden;
+}
+
+.help_right .member_address_main li:first-child {
+    padding-bottom: 0px;
+    border-bottom: 0;
+}
+
+.member_address_main li {
+    padding: 0 10px;
+    border-bottom: 1px solid #d0d0d0;
+    overflow: hidden;
+    padding-bottom: 25px;
+    color: #666666;
+}
+
+.help_right .bf7 {
+    background: url(../images/sidnav_bg.jpg);
+}
+
+.help_right .h35 {
+    height: 35px;
+    line-height: 35px;
+}
+
+.help_right .h50 {
+    height: 50px;
+    line-height: 30px;
+}
+
+.help_right .w145 {
+    width: 145px;
+    margin-left: 21px;
+}
+
+.help_right .w785 {
+    width: 752px;
+}
+
+.help_right .member_address_main .tblue {
+    color: #005ea7;
+}
+
+.w50 {
+    width: 50px;
+}
+
+.member_address_main {
+    height: auto;
+    background: white;
+    border-top: 2px solid #3d1b18;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+.address_mt {
+    margin-top: 17px;
+    margin-left: 30px;
+}
+
+.help_right {
+    width: 1034px;
+}
+
+.new_a {
+    background: url(../images/new_a.png) center top no-repeat;
+    width: 126px;
+    height: 22px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+/* end member_address_right_column*/

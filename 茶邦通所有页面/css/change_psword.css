@@ -1,0 +1,185 @@
+@charset "utf-8";
+.change_ps {
+  width: 1035px;
+  height: 906px;
+  float: right;
+}
+.change_ps_t {
+  width: 100%;
+  height: 36px;
+  float: left;
+  font-size: 18px;
+  font-family: "Microsoft Yahei";
+  color: #444;
+}
+.change_ps_con {
+  width: 100%;
+  height: 867px;
+  float: left;
+  background: white;
+  border-top: 2px solid #411d19;
+}
+.change_state {
+  width: 434px;
+  height: 55px;
+  position: relative;
+  top: 50px;
+  left: 295px;
+}
+.change_state .cs_1 {
+  margin-left: -12px;
+}
+.change_state .cs_2 {
+  margin-left: 50px;
+}
+.change_state .cs_3 {
+  text-align: right;
+  margin-left: -40px;
+  position: relative;
+  left: 32px;
+}
+.phone_sure {
+  width: 458px;
+  height: 122px;
+  position: relative;
+  top: 100px;
+  left: 260px;
+}
+.phone_sure label {
+  width: 103px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  display: inline-block;
+  margin-right: 10px;
+}
+.phone_sure p {
+  margin-bottom: 15px;
+  color: #555;
+}
+.ver_code input {
+  width: 187px;
+  height: 28px;
+  border: 1px solid #ddd;
+  text-indent: 10px;
+  font-family: "Arial";
+}
+.ver_code button {
+  width: 132px;
+  height: 28px;
+  border: 1px solid #ddd;
+  color: #000;
+  margin-left: 12px;
+}
+.cs_w_nav {
+  height: 20px;
+  margin-bottom: 9px;
+}
+.cs_w_nav li {
+  float: left;
+  width: 105px;
+  margin-right: 39px;
+  list-style: none;
+  color: #666;
+}
+.cs_pic_bg {
+  width: 434px;
+  height: 30px;
+  background: url(../images/progress_one.jpg) no-repeat;
+}
+.pw_progress {
+  width: 434px;
+  height: 30px;
+  background: url(../images/progress_two.jpg) no-repeat;
+}
+.fini_progress {
+  width: 434px;
+  height: 30px;
+  background: url(../images/progress_three.jpg) no-repeat;
+}
+.your_phone span {
+  font-size: 16px;
+  font-family: "Arial";
+}
+.sub input {
+  width: 70px;
+  height: 22px;
+  background: url(../images/submit_bt.jpg) no-repeat;
+  border: none;
+  margin-left: 7px;
+  position: relative;
+  top: -5px;
+}
+.tip_word {
+  display: none;
+  white-space: nowrap;
+  color: #999;
+  margin-top: -24px;
+}
+.tip_word label {
+  margin-right: 15px;
+}
+.tip_word i {
+  display: inline;
+  color: #ff9600;
+}
+/* pw2 */
+.new_password {
+  width: 344px;
+  height: 167px;
+  position: relative;
+  top: 94px;
+  left: 271px;
+}
+.new_password label {
+  width: 108px;
+  height: 20px;
+  display: inline-block;
+  text-align: right;
+}
+.new_password input {
+  width: 185px;
+  height: 28px;
+  border: 1px solid #ddd;
+  text-indent: 10px;
+}
+.new_password p {
+  margin-bottom: 16px;
+}
+.new_password p label {
+  color: #555;
+}
+.sub_pw .sub {
+  width: 72px;
+  height: 22px;
+  background: url(../images/submit_bt.jpg) no-repeat;
+  border: none;
+  margin-top: 25px;
+}
+.pw_tip {
+  white-space: nowrap;
+  position: relative;
+  left: 115px;
+  color: #999;
+  display: none;
+}
+.pw_b {
+  border-color: #f8e5bf!important;
+}
+.dagou {
+  display: inline-block;
+  background: url(../images/p_dagou.jpg) no-repeat;
+  width: 33px;
+  height: 33px;
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
+}
+.pw_c_finish {
+  position: relative;
+  top: 118px;
+  left: 406px;
+  color: #333;
+  font-family: "Microsoft Yahei";
+  font-size: 16px;
+}

@@ -1,0 +1,154 @@
+
+@charset "utf-8";
+.help_right {
+    width: 1035px;
+}
+.member_title {
+    height: 35px;
+    font-size: 18px;
+    color: #444;
+    font-family: "microsoft yahei";
+    position: relative;
+    border-bottom: 1px solid #D0D0D0;
+    margin-bottom: 12px;
+}
+.order_progress {
+    height: 85px;
+    background: url("../images/progress2.png") repeat scroll -25px -87px transparent;
+    width: 800px;
+    margin: 45px auto 0px;
+    position: relative;
+}
+.order_progress i {
+    background: url("../images/progress2.png") repeat scroll -25px 0px transparent;
+    height: 85px;
+    width: 280px;
+    bottom: 28px;
+    position: absolute;
+}
+.progerss_t {
+    position: absolute;
+    bottom: 38px;
+}
+.progerss_t li.checked {
+    color: #009251;
+}
+.progerss_t li {
+    float: left;
+    width: 80px;
+}
+.mr100 {
+    margin-right: 100px;
+}
+ul li {
+    list-style: outside none none;
+}
+.order_main {
+    border: 1px solid #DDD;
+	background:white;
+	min-height: 739px;
+	height:auto;
+}
+.order_main_t {
+    background:url(../images/dd_title_bg.jpg);
+    height: 35px;
+    line-height: 35px;
+    padding-left: 20px;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #DDD;
+}
+.order_main li {
+    border-bottom: 1px solid #DDD;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.order_main .tblack {
+    color: #000;
+}
+.order_info p, .order_way p {
+    line-height: 24px;
+    color: #666;
+}
+.order_main .pro_detail {
+    width: 990px;
+    margin: 0px auto;
+    padding-left: 0px;
+    border-bottom: 0px none;
+}
+.order_main .tblack {
+    color: #000;
+}
+.pro_detail p {
+    float: left;
+}
+.order_header {
+    background: #f1eaea;
+    height: 32px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+.order_header label, .order_column label {
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    float: left;
+    color: #666;
+}
+.pro_id {
+    width: 200px;
+}
+.pro_name {
+    width: 350px;
+    overflow: hidden;
+    height: 44px;
+}
+.pro_pr {
+    width: 150px;
+}
+.pro_am {
+    width: 140px;
+}
+.pro_to {
+    width: 120px;
+}
+.pro_detail p {
+    float: left;
+}
+.order_column {
+    height: 40px;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.check_price {
+    width: 150px;
+    float: right;
+}
+.check_price p {
+    float: none;
+    color: #666;
+}
+.check_price p span {
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+}
+.progerss_t li{
+	color:#666;
+}
+.check_price span{
+	color:#d0121b;
+}
+.pro_where{
+    clear: left;
+    color: #666;
+}
+.progerss_t .ml90{
+    margin-left: 86px;
+}

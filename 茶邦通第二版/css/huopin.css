@@ -1,0 +1,359 @@
+.bg_color {
+    background: #f3f3f3;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.p_r {
+    position: relative;
+    margin: 0 auto;
+}
+
+.line_banner {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.main_c {
+    width: 1200px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+.hp_list {
+    border-top: 1px solid #ddd;
+    width: auto;
+    height: auto;
+    margin-bottom: 85px;
+}
+
+.hp_list ul li {
+    list-style: none;
+}
+
+.hp_list .p_li {
+    height: 320px;
+    width: 1198px;
+    border: 1px solid #ddd;
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: white;
+}
+
+.pro_img {
+    float: left;
+}
+
+.pro_img img {
+    width: 400px;
+    height: 320px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.pro_xq {
+    float: left;
+    margin-left: 35px;
+    width: 545px;
+}
+
+.pro_box {
+    margin-left: 20px;
+}
+
+.pro_t {
+    height: 46px;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.pro_t h4 {
+    font-family: "microsoft yahei";
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: -10px;
+}
+
+.pro_ms {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 25px;
+}
+
+.pro_ms ul {
+    color: #999;
+}
+
+.pro_ms li {
+    font-family: "microsoft yahei";
+    color: #666;
+    font-size: 14px;
+    line-height: 27px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pro_ms li i {
+    background: url(../images/p_dian.png) no-repeat;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    top: -2px;
+}
+
+.yh {
+    font-family: "microsoft yahei";
+    color: #333;
+}
+
+.time_num {
+    height: 31px;
+}
+
+.time_end {
+    float: left;
+    margin-right: 70px;
+    width: 200px;
+    font-family: "microsoft yahei";
+    color: #333;
+    font-size: 14px;
+}
+
+.time_end em {
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon.png) no-repeat -202px -167px;
+}
+
+.time_end span {
+    font-size: inherit;
+    font-family: arial;
+    color: inherit;
+}
+
+.icon {
+    background: url(../images/icon.png) no-repeat;
+}
+
+.order_num {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    font-family: "microsoft yahei";
+    color: #333;
+    font-size: 14px;
+    color: #666;
+}
+.order_num{
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+
+.order_num em,
+.order_num i {
+    width: 20px;
+    height: 22px;
+    border: 1px solid #ccc;
+    line-height: 20px;
+    text-align: center;
+    background: url(../images/icon.png) no-repeat;
+    position: relative;
+    top: 8px;
+}
+
+.order_num i {
+    border: 1px solid #888;
+    background-position: -274px -85px;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.order_num em {
+    background-position: -274px -55px;
+    background-color: white;
+}
+
+.order_num input {
+    width: 55px;
+    height: 20px;
+    border: 1px solid #ccc;
+    margin: auto 5px;
+    text-align: center;
+    font-family: arial;
+    color: #666;
+}
+
+.hp_buy {
+    position: relative;
+    margin-top: 5px;
+    width: 748px;
+    height: 88px;
+    background: url(../images/huan_bg.png);
+}
+
+.hp_buy .cb {
+    border-right: 1px solid #ffbf73;
+    border-left: 1px solid #ffbf73;
+}
+
+.hp_buy ul li {
+    float: left;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
+    height: 68px;
+    color: white;
+    font-size: 14px;
+}
+
+.hp_buy ul li em {
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    color: white;
+    margin-bottom: 4px;
+}
+
+.hp_buy ul li p {
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    color: white;
+}
+
+.hp_buy ul li p i {
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    color: white;
+}
+
+.hp_buy ul li p span {
+    font-family: verdana;
+    font-size: 16px;
+    color: white;
+}
+
+.hp_buy:after {
+    content: url(../images/juan_die.png);
+    background-position: center center;
+    overflow: hidden;
+    width: 5px;
+    height: 17px;
+    display: inline-block;
+    position: absolute;
+    bottom: -9px;
+    right: -1px;
+}
+
+.hp_buy .had_pri em {
+    color: #ffff00;
+    font-family: "microsoft yahei";
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.hp_buy .had_pri p {
+    color: #ffff00;
+    font-family: "microsoft yahei";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hp_buy .had_pri p i {
+    vertical-align: super;
+    color: #FF0;
+    font-family: "microsoft yahei";
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    top: -4px;
+}
+
+.hp_buy .had_pri p span {
+    color: #ffff00;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.add_car {
+    width: 136px;
+    height: 40px;
+    display: inline-block;
+    background: linear-gradient(top, #ffff6a, #ffff0f);
+    background: -moz-linear-gradient(top, #ffff6a, #ffff0f);
+    background: -webkit-linear-gradient(top, #ffff6a, #ffff0f);
+    background: -ms-linear-gradient(top, #ffff6a, #ffff0f);
+    border: none;
+    border-radius: 4px;
+    color: #ff5600;
+    font-family: "microsoft yahei";
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 24px;
+    left: 407px;
+    padding-bottom: 2px;
+}
+
+.pro_other {
+    margin-top: 10px;
+}
+
+.pro_other .s1 {
+    float: left;
+    margin-left: 20px;
+}
+
+.pro_other .s2 {
+    float: right;
+}
+
+.pro_other span {
+    color: #999;
+    font-family: "microsoft yahei";
+}
+
+.pro_other span i {
+    color: #999;
+    font-family: arial;
+}
+
+.lv_style {
+    background: url(../images/lv_bg.png) !important;
+}
+
+.lv_style .cb {
+    border-right: 1px solid #7ada7d!important;
+    border-left: 1px solid #7ada7d!important;
+}
+
+.lv_style .add_car {
+    color: #0cbc13!important;
+}
+
+.lv_style:after {
+    content: url(../images/juan_die_lv.png) !important;
+}
+
+.lv_style .ac_c {
+    color: #FF5600!important;
+}
+
+.order_num i,
+.order_num em,
+.add_car:hover {
+    cursor: pointer;
+}

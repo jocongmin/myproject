@@ -1,0 +1,47 @@
+@charset "utf-8";
+.main{width:100%}
+.paying_main{width:990px;margin:0 auto;padding-top: 16px;}
+/*header*/
+.oteao_header{width:100%;}
+.oteao_header_main{width:990px;margin:0 auto;}
+/*login_plan*/
+.oteao_toolbar{background:#f2f2f2;height:29px;line-height:29px;border-bottom:1px solid #e5e5e5;margin-bottom:20px;}
+.oteao_toolbarmain{width:990px;margin:0 auto;height:31px;position: relative;}
+.oteao_toolrightbar a{border-right:1px solid #000;padding:0 12px;}
+.oteao_logo {
+    width: 275px;
+    height: 90px;
+    background: transparent url("../images/c_logo.jpg") no-repeat scroll 0% 0%;
+    margin-top: -8px;
+    margin-bottom: 6px;
+}
+.orange{color: #ff9600;}
+/*end login_plan*/
+/*end header*/
+
+/*pay_success*/
+.paying_info{background:#f7f7f7;margin-bottom:20px;height:150px;margin-bottom:60px;}
+.paying_info label{border-right:1px solid #cccccc;padding:0 14px;}
+.paying_info .no-bor{border-right:0;}
+.paying_info_t{font-size:16px;font-family:"Microsoft YaHei";font-weight:bold;margin-left:12px;}
+.paying_info .tred{color:#ff9600;}
+.paying_info p span a{color:#0159a1;}
+.paying_info p > span:first-child{padding:0 10px;}
+.paying_contiue{padding:30px 0 0 65px;}
+.order_ok{background:url(../images/check_ok.jpg) no-repeat;width:35px;height:35px;float:left;margin:30px 0 0 15px;}
+.check_ok{float:left;margin-top:30px;line-height:26px;}
+/*end pay_success*/
+
+
+
+.cart_foot{text-align:center;}
+.cart_foot a,.cart_foot p{color:#666666;}
+.cart_foot a{border-right:1px solid #666666;padding:0 10px}
+
+
+
+.bgcolor{
+	background: #f6f4e8;
+	height: 592px;
+}
+.oteao_header{background: white;}

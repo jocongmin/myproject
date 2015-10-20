@@ -1,0 +1,388 @@
+@charset "utf-8";
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+span,
+a {
+    margin: 0;
+    padding: 0;
+}
+a:hover{
+    color: #ff9600!important;
+}
+
+body {
+    background: #ebebeb;
+    font-size: 12px;
+    color: #333333;
+    line-height: 24px;
+    font-family: "simsun", "Arial", "Sans-Serif";
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img,
+input,
+fieldset {
+    border: none;
+}
+
+input {
+    font-size: 12px;
+    font-family: "Tahoma", "Arial", "Sans-Serif";
+}
+
+ul li {
+    list-style: none;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+
+/*---------<a>标签/清楚浮动样式-----------*/
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:link {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bb131b;
+    text-decoration: none;
+}
+
+a:active {
+    color: #333333;
+    text-decoration: none;
+}
+
+.brown {
+    color: #a0603d;
+}
+
+.brown a:link {
+    color: #a0603d;
+    text-decoration: none;
+}
+
+.brown a:visited {
+    color: #a0603d;
+    text-decoration: none;
+}
+
+.brown a:hover {
+    color: #bb131b;
+    text-decoration: underline;
+}
+
+.brown a:active {
+    color: #a0603d;
+    text-decoration: none;
+}
+
+.red {
+    color: #bb131b;
+}
+
+.red a:link {
+    color: #bb131b;
+    text-decoration: none;
+}
+
+.red a:visited {
+    color: #bb131b;
+    text-decoration: none;
+}
+
+.red a:hover {
+    color: #a0603d;
+    text-decoration: underline;
+}
+
+.red a:active {
+    color: #bb131b;
+    text-decoration: none;
+}
+
+.green {
+    color: #70943c;
+}
+
+.green a:link {
+    color: #70943c;
+    text-decoration: none;
+}
+
+.green a:visited {
+    color: #70943c;
+    text-decoration: none;
+}
+
+.green a:hover {
+    color: #a0603d;
+    text-decoration: underline;
+}
+
+.green a:active {
+    color: #70943c;
+    text-decoration: none;
+}
+
+.cl {
+    clear: both;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/*---------字体/背景-----------*/
+
+
+/* 顶部top的css */
+
+.home_link {
+    position: absolute;
+    left: 0px;
+}
+
+.home_link i {
+    background: transparent url("../images/home.jpg") repeat scroll 0% 0%;
+    width: 17px;
+    height: 16px;
+    float: left;
+    margin-top: 7px;
+}
+
+.home_link span {
+    margin-left: 3px;
+}
+
+.home_link span a {
+    color: #666;
+}
+
+.login {
+    color: #666;
+}
+
+.login {
+    position: absolute;
+    left: 103px;
+}
+
+.login a:nth-child(2) {
+    margin-left: 20px;
+}
+
+.login a {
+    color: #666;
+}
+
+.login a:nth-child(3) {
+    margin-left: 13px;
+    color: #ff9600;
+}
+
+.topnav {
+    position: absolute;
+    left: 487px;
+    top: -3px;
+}
+
+ul {
+    list-style: outside none none;
+}
+
+.topnav li {
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    padding: 0px 8px;
+    color: #666;
+}
+
+.shortcut-account {
+    width: 78px;
+}
+
+.topnav li a {
+    color: #666;
+}
+
+.menu-box {
+    display: none;
+    background: #FFF none repeat scroll 0% 0%;
+    z-index: 9998;
+    position: absolute;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    width: 86px;
+    margin-left: -6px;
+    margin-top: -1px;
+}
+
+.menu-box a {
+    display: block;
+    padding: 0px 17px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.topnav li.v-space {
+    height: 12px;
+    margin-top: 12px;
+    border-right: 1px solid #CCC;
+    padding: 0px;
+}
+
+.topnav li {
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    padding: 0px 5px;
+    color: #666;
+}
+
+.topnav li a {
+    color: #666;
+}
+
+.save_link {
+    float: right;
+}
+
+.save_link i {
+    background: transparent url("../images/save.jpg") repeat scroll 0% 0%;
+    width: 19px;
+    height: 16px;
+    float: left;
+    margin-top: 6px;
+    margin-right: 2px;
+}
+
+.save_link span {
+    color: #666;
+}
+
+.topnav li:hover .ar-down {
+    transform: rotate(180deg);
+}
+
+.ar-down {
+    border-left: 5px solid #F2F2F2;
+    border-top: 5px solid #666;
+    border-right: 5px solid #F2F2F2;
+    line-height: 0px;
+    height: 0px;
+    display: inline-block;
+    transition: all 0.1s ease-in 0s;
+    margin-bottom: 2px;
+    margin-left: 4px;
+}
+
+.red {
+    color: #ff9600;
+}
+
+.yellow_bg {
+    background: #f3f3f3;
+    margin-top: -41px;
+    padding-top: 40px;
+    border-top: 1px solid #74332d;
+    padding-bottom: 30px;
+}
+
+.fp_tc:hover {
+    text-decoration: underline;
+}
+
+.oteao_searchplan {
+    height: 95px!important;
+}
+
+.dropdown:hover {
+    background: white;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+}
+.dropdown:hover .shortcut-account{
+    width: 76px;
+}
+.dropdown:hover .shortcut-account a{
+    margin-left: -1px;
+}
+.cooper{
+    margin-top: 18px;
+}
+.cooper span {
+    display: inline-block;
+    width: 102px;
+    height: 35px;
+    background: url(../images/cooperation.png) no-repeat;
+}
+.cooper .c2 {
+    background-position: -105px;
+    width: 112px;
+}
+.cooper .c3 {
+    background-position: -216px;
+    width: 119px;
+}
+.cooper .c4 {
+    background-position: -347px;
+    width: 135px;
+}
+.cart_foot p{
+    font-family: arial;
+    color: #333;
+}
+.cart_foot a{
+    padding: 0px 15px;
+}

@@ -1,0 +1,543 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>茶邦通购物车</title>
+    <script type="text/javascript" src="http://oteao.com:80//Front/common/js/jquery-1.8.0.min.js"></script>
+    <script src="js/slider.js"></script>
+    <link rel="stylesheet" href="css/car.css">
+    <link rel="stylesheet" href="css/top_re.css">
+</head>
+
+<body>
+    <div class="oteao_index">
+        <!-- 以下是发送验证码弹窗 -->
+        <div class="pm_outer">
+            <div id="phoneMessageDiv" class="addcartcg">
+                <div style="padding:30px 0px 0px 20px;">
+                    <div class="coseTc" onclick="coseTcFn()">&nbsp;</div>
+                    <div><span style="color:rgb(105, 101, 101);" id="lastFourNum"></span></div>
+                    <div class="duaxyz"><span id="sendMessage" onclick="sendMessage()">点击发送验证码</span></div>
+                    <span>请输入短信:</span>
+                    <input id="phoneMessage" style="width:100px;" name="phoneMessage" onkeyup="value=value.replace(/[^\d]/g,'') " maxlength="6" value="" type="text"> <span id="phoneMessageShow" style="color:red;"></span>
+                    <div>
+                        <input value="提交" disabled="disabled" id="checkMessageButton" onclick="checkMessage($('#phoneMessage').val())" type="button">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="oteao_header">
+            <div class="oteao_toolbar">
+                <div class="oteao_toolbarmain">
+                    <div class="home_link">
+                        <i></i>
+                        <span><a href="#">茶帮通首页</a></span>
+                    </div>
+                    <div class="login">
+                        <span>您好，欢迎来到茶帮通</span>
+                        <a href="#">请登录</a>
+                        <a href="#">免费注册</a>
+                    </div>
+                    <div class="topnav">
+                        <ul class="shortcut-box">
+                            <li class="dropdown">
+                                <div class="shortcut-account">
+                                    <a href="#">我的茶帮通<i class="ar-down"></i></a>
+                                </div>
+                                <div class="menu-box">
+                                    <a href="#">账户中心</a>
+                                    <!-- <a href="#">我的购物车</a> -->
+                                    <a href="#">我的收藏</a>
+                                    <a href="#">个人档案</a>
+                                </div>
+                            </li>
+                            <li class="v-space"></li>
+                            <li><a href="#">品牌介绍</a></li>
+                            <li class="v-space"></li>
+                            <li><a href="#">帮助中心</a></li>
+                            <li class="v-space"></li>
+                            <li>全国统一订购热线：<span class="orange">4000-996-3399</span></li>
+                        </ul>
+                    </div>
+                    <div class="save_link">
+                        <i></i>
+                        <span>收藏茶帮通</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cl"></div>
+            <div class="oteao_header_main">
+                <div class="oteao_searchplan">
+                    <div class="oteao_logo fl"></div>
+                </div>
+            </div>
+            <div class="c_line"></div>
+        </div>
+        <div class="main_bg_c">
+            <div class="home_cart">
+                <div class="shopping_state">
+                    <div class="shopping_state_t">
+                        <ul>
+                            <li class="schedule1">我的购物车 </li>
+                            <li class="schedule2">填写核对订单信息 </li>
+                            <li class="schedule3">成功提交订单</li>
+                            <li class="schedule4">商品评价</li>
+                        </ul>
+                        <div class="cl"></div>
+                    </div>
+                    <div class="s_progress">
+                        <div class="progress">
+                            <div class="progress1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping_cart">
+                    <p>我的购物车</p>
+                    <div class="cart_list">
+                        <table cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <th class="cart_btn">
+                                        <input type="checkbox" /><span>全选</span>
+                                    </th>
+                                    <th class="cart_name">
+                                        商品名称
+                                    </th>
+                                    <th class="cart_VIP">
+                                        会员价(元)
+                                    </th>
+                                    <th class="cart_acc">
+                                        数量
+                                    </th>
+                                    <th class="cart_Points">
+                                        送积分
+                                    </th>
+                                    <th class="cart_total">
+                                        小计(元)
+                                    </th>
+                                    <th class="cart_opera">
+                                        操作
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" />
+                                    </td>
+                                    <td class="cart_name">
+                                        <div class="cart_dpic">
+                                            <a href="" target="_blank"><img src="images/c_pro1.jpg" width="50" height="50" /></a>
+                                        </div>
+                                        <div class="cart_dname">
+                                            <a href="" target="_blank">头采龙井清香2# 一级一等 炒青绿茶  豆香头采龙井清香2# 一级一等 炒青绿茶  豆香</a>
+                                        </div>
+                                    </td>
+                                    <td class="cart_VIP">
+                                        <s>198.00</s>
+                                        <br> 168.00
+                                    </td>
+                                    <td class="cart_stock">
+                                        <div class="opera_num">
+                                            <a href="javascript:;" class="minus">-</a>
+                                            <input type="text" value="1" />
+                                            <a href="javascript:;" class="plus">+</a>
+                                            <br> 库存量1698斤
+                                        </div>
+                                    </td>
+                                    <td class="cart_Points">2</td>
+                                    <td class="cart_total">2</td>
+                                    <td class="cart_opera" align="left"><a href="javascript:;" class="tblue">删除</a>
+                                        <br>移到我的关注
+                                    </td>
+                                </tr>
+                                <tr class="daibz">
+                                    <td>
+                                        <input type="checkbox" />
+                                    </td>
+                                    <td class="cart_name">
+                                        【代封装服务】金骏眉泡袋 SSM-1004 金
+                                    </td>
+                                    <td class="cart_VIP">
+                                        18.00
+                                    </td>
+                                    <td class="cart_stock">
+                                        3
+                                    </td>
+                                    <td class="cart_Points"></td>
+                                    <td class="cart_total">5645.00</td>
+                                    <td class="cart_opera" align="left"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" />
+                                    </td>
+                                    <td class="cart_name">
+                                        <div class="cart_dpic">
+                                            <a href="" target="_blank"><img src="images/c_pro1.jpg" width="50" height="50" /></a>
+                                        </div>
+                                        <div class="cart_dname">
+                                            <a href="" target="_blank">头采龙井清香2# 一级一等 炒青绿茶  豆香头采龙井清香2# 一级一等 炒青绿茶  豆香</a>
+                                        </div>
+                                    </td>
+                                    <td class="cart_VIP">
+                                        <s>198.00</s>
+                                        <br> 168.00
+                                    </td>
+                                    <td class="cart_stock">
+                                        <div class="opera_num">
+                                            <a href="javascript:;" class="minus">-</a>
+                                            <input type="text" value="1" />
+                                            <a href="javascript:;" class="plus">+</a>
+                                            <br> 库存量1698斤
+                                        </div>
+                                    </td>
+                                    <td class="cart_Points">2</td>
+                                    <td class="cart_total">2</td>
+                                    <td class="cart_opera" align="left"><a href="javascript:;" class="tblue">删除</a>
+                                        <br>移到我的关注
+                                    </td>
+                                </tr>
+                                <tr class="daibz">
+                                    <td>
+                                        <input type="checkbox" />
+                                    </td>
+                                    <td class="cart_name">
+                                        【代封装服务】金骏眉泡袋 SSM-1004 金
+                                    </td>
+                                    <td class="cart_VIP">
+                                        18.00
+                                    </td>
+                                    <td class="cart_stock">
+                                        3
+                                    </td>
+                                    <td class="cart_Points"></td>
+                                    <td class="cart_total">5645.00</td>
+                                    <td class="cart_opera" align="left"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" />
+                                    </td>
+                                    <td class="cart_name">
+                                        <div class="cart_dpic">
+                                            <a href="" target="_blank"><img src="images/c_pro1.jpg" width="50" height="50" /></a>
+                                        </div>
+                                        <div class="cart_dname">
+                                            <a href="" target="_blank">头采龙井清香2# 一级一等 炒青绿茶  豆香头采龙井清香2# 一级一等 炒青绿茶  豆香</a>
+                                        </div>
+                                    </td>
+                                    <td class="cart_VIP">
+                                        <s>198.00</s>
+                                        <br> 168.00
+                                    </td>
+                                    <td class="cart_stock">
+                                        <div class="opera_num">
+                                            <a href="javascript:;" class="minus">-</a>
+                                            <input type="text" value="1" />
+                                            <a href="javascript:;" class="plus">+</a>
+                                            <br> 库存量1698斤
+                                        </div>
+                                    </td>
+                                    <td class="cart_Points">2</td>
+                                    <td class="cart_total">2</td>
+                                    <td class="cart_opera" align="left"><a href="javascript:;" class="tblue">删除</a>
+                                        <br>移到我的关注
+                                    </td>
+                                </tr>
+                                <tr class="daibz">
+                                    <td>
+                                        <input type="checkbox" />
+                                    </td>
+                                    <td class="cart_name">
+                                        【代封装服务】金骏眉泡袋 SSM-1004 金
+                                    </td>
+                                    <td class="cart_VIP">
+                                        18.00
+                                    </td>
+                                    <td class="cart_stock">
+                                        3
+                                    </td>
+                                    <td class="cart_Points"></td>
+                                    <td class="cart_total">5645.00</td>
+                                    <td class="cart_opera" align="left"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" />
+                                    </td>
+                                    <td class="cart_name">
+                                        <div class="cart_dpic">
+                                            <a href="" target="_blank"><img src="images/c_pro1.jpg" width="50" height="50" /></a>
+                                        </div>
+                                        <div class="cart_dname">
+                                            <a href="" target="_blank">头采龙井清香2# 一级一等 炒青绿茶  豆香头采龙井清香2# 一级一等 炒青绿茶  豆香</a>
+                                        </div>
+                                    </td>
+                                    <td class="cart_VIP">
+                                        <s>198.00</s>
+                                        <br> 168.00
+                                    </td>
+                                    <td class="cart_stock">
+                                        <div class="opera_num">
+                                            <a href="javascript:;" class="minus">-</a>
+                                            <input type="text" value="1" />
+                                            <a href="javascript:;" class="plus">+</a>
+                                            <br> 库存量1698斤
+                                        </div>
+                                    </td>
+                                    <td class="cart_Points">2</td>
+                                    <td class="cart_total">2</td>
+                                    <td class="cart_opera" align="left"><a href="javascript:;" class="tblue">删除</a>
+                                        <br>移到我的关注</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" />
+                                    </td>
+                                    <td class="cart_name">
+                                        <div class="cart_dpic">
+                                            <a href="" target="_blank"><img src="images/c_pro1.jpg" width="50" height="50" /></a>
+                                        </div>
+                                        <div class="cart_dname">
+                                            <a href="" target="_blank">头采龙井清香2# 一级一等 炒青绿茶  豆香头采龙井清香2# 一级一等 炒青绿茶  豆香</a>
+                                        </div>
+                                    </td>
+                                    <td class="cart_VIP">
+                                        <s>198.00</s>
+                                        <br> 168.00
+                                    </td>
+                                    <td class="cart_stock">
+                                        <div class="opera_num">
+                                            <a href="javascript:;" class="minus">-</a>
+                                            <input type="text" value="1" />
+                                            <a href="javascript:;" class="plus">+</a>
+                                            <br> 库存量1698斤
+                                        </div>
+                                    </td>
+                                    <td class="cart_Points">2</td>
+                                    <td class="cart_total">2</td>
+                                    <td class="cart_opera" align="left"><a href="javascript:;" class="tblue">删除</a>
+                                        <br>移到我的关注</td>
+                                </tr>
+                                <tr>
+                                    <td width="990px" colspan="9">
+                                        <div class="zonji">
+                                            <p><em>商品总额：</em><i>￥46454.00</i></p>
+                                            <p><em>满100减30：</em><i>-100.00</i></p>
+                                            <p>
+                                                <em>积分抵扣：</em><i>-0.00</i>
+                                            </p>
+                                            <div class="jifen_pay">
+                                                <input type="checkbox">现有积分：<span>4654</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>
+                                        <div class="left_total"><i></i><a href="javascript:;">删除选中的产品</a></div>
+                                        <label class="fs14 fb">总价(不含运费)：<span>￥366</span></label>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="jis_btn"><a href=""><i></i></a></div>
+                <div class="jix_btn"><a href="">继续购物</a></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="recommend">
+            <div class="recommend_t">
+                购买了同样商品的顾客还购买了
+            </div>
+            <div class="recommend_pro">
+                <a href="javascript:;" class="prev">
+                </a>
+                <a href="javascript:;" class="prev2">
+                </a>
+                <div class="pro_box">
+                    <ul class="pro_box_list">
+                        <li>
+                            <p><img src="images/c_pro2.jpg" width="130" height="100"></p>
+                            <div class="re_name">
+                                <a href="" target="_blank">头采龙井清香2# 一级一 等 炒青绿茶 豆香</a>
+                            </div>
+                            <div class="re_price">
+                                <label>供货价：<span>￥288</span></label>
+                            </div>
+                            <div class="re_btn">
+                                <a href="">加入购物车</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p><img src="images/c_pro2.jpg" width="130" height="100"></p>
+                            <div class="re_name">
+                                <a href="" target="_blank">头采龙井清香2# 一级一 等 炒青绿茶 豆香</a>
+                            </div>
+                            <div class="re_price">
+                                <label>供货价：<span>￥288</span></label>
+                            </div>
+                            <div class="re_btn">
+                                <a href="">加入购物车</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p><img src="images/c_pro2.jpg" width="130" height="100"></p>
+                            <div class="re_name">
+                                <a href="" target="_blank">头采龙井清香2# 一级一 等 炒青绿茶 豆香</a>
+                            </div>
+                            <div class="re_price">
+                                <label>供货价：<span>￥288</span></label>
+                            </div>
+                            <div class="re_btn">
+                                <a href="">加入购物车</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p><img src="images/c_pro2.jpg" width="130" height="100"></p>
+                            <div class="re_name">
+                                <a href="" target="_blank">头采龙井清香2# 一级一 等 炒青绿茶 豆香</a>
+                            </div>
+                            <div class="re_price">
+                                <label>供货价：<span>￥288</span></label>
+                            </div>
+                            <div class="re_btn">
+                                <a href="">加入购物车</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p><img src="images/c_pro2.jpg" width="130" height="100"></p>
+                            <div class="re_name">
+                                <a href="" target="_blank">头采龙井清香2# 一级一 等 炒青绿茶 豆香</a>
+                            </div>
+                            <div class="re_price">
+                                <label>供货价：<span>￥288</span></label>
+                            </div>
+                            <div class="re_btn">
+                                <a href="">加入购物车</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p><img src="images/c_pro2.jpg" width="130" height="100"></p>
+                            <div class="re_name">
+                                <a href="" target="_blank">头采龙井清香2# 一级一 等 炒青绿茶 豆香</a>
+                            </div>
+                            <div class="re_price">
+                                <label>供货价：<span>￥288</span></label>
+                            </div>
+                            <div class="re_btn">
+                                <a href="">加入购物车</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p><img src="images/c_pro2.jpg" width="130" height="100"></p>
+                            <div class="re_name">
+                                <a href="" target="_blank">头采龙井清香2# 一级一 等 炒青绿茶 豆香</a>
+                            </div>
+                            <div class="re_price">
+                                <label>供货价：<span>￥288</span></label>
+                            </div>
+                            <div class="re_btn">
+                                <a href="">加入购物车</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p><img src="images/c_pro2.jpg" width="130" height="100"></p>
+                            <div class="re_name">
+                                <a href="" target="_blank">头采龙井清香2# 一级一 等 炒青绿茶 豆香</a>
+                            </div>
+                            <div class="re_price">
+                                <label>供货价：<span>￥288</span></label>
+                            </div>
+                            <div class="re_btn">
+                                <a href="">加入购物车</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p><img src="images/c_pro2.jpg" width="130" height="100"></p>
+                            <div class="re_name">
+                                <a href="" target="_blank">头采龙井清香2# 一级一 等 炒青绿茶 豆香</a>
+                            </div>
+                            <div class="re_price">
+                                <label>供货价：<span>￥288</span></label>
+                            </div>
+                            <div class="re_btn">
+                                <a href="">加入购物车</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p><img src="images/c_pro2.jpg" width="130" height="100"></p>
+                            <div class="re_name">
+                                <a href="" target="_blank">头采龙井清香2# 一级一 等 炒青绿茶 豆香</a>
+                            </div>
+                            <div class="re_price">
+                                <label>供货价：<span>￥288</span></label>
+                            </div>
+                            <div class="re_btn">
+                                <a href="">加入购物车</a>
+                            </div>
+                        </li>
+                        <li>
+                            <p><img src="images/c_pro2.jpg" width="130" height="100"></p>
+                            <div class="re_name">
+                                <a href="" target="_blank">头采龙井清香2# 一级一 等 炒青绿茶 豆香</a>
+                            </div>
+                            <div class="re_price">
+                                <label>供货价：<span>￥288</span></label>
+                            </div>
+                            <div class="re_btn">
+                                <a href="">加入购物车</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="line_t"></div>
+        <div class="cart_foot cl">
+            <a href="" target="_blank">关于我们</a>
+            <a href="" target="_blank">隐私申明</a>
+            <a href="" target="_blank">成为供应商</a>
+            <a href="" target="_blank">投诉与建议</a>
+            <a href="" target="_blank">醉品社区</a>
+            <a href="" target="_blank" class="not-br">友情链接</a>
+            <p>Copyright 2010 - 2014 oteao.com All Rights Reserved 闽ICP备10200063号-1</p>
+            <div class="cooper">
+                <span class="c1"></span>
+                <span class="c2"></span>
+                <span class="c3"></span>
+                <span class="c4"></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+$(function() {
+    $('.recommend_pro').mySlider({ //参数可选,以下为默认参数
+        speed: 300,
+        direction: 'left', //  运动方向 可选 left,top
+        prevClass: 'prev',
+        nextClass: 'prev2',
+        prevClass: 'prev',
+        wrapperClass: 'pro_box',
+        moveClass: 'pro_box_list'
+    });
+});
+</script>
+<script>
+$(function() {
+    $(".dropdown").hover(function() {
+        $(".menu-box").show();
+    }, function() {
+        $(".menu-box").hide();
+    })
+})
+</script>
+
+</html>

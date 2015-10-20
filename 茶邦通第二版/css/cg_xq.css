@@ -1,0 +1,169 @@
+.yh {
+  font-family: "microsoft yahei";
+}
+.m_bg {
+  background: #f3f3f3;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.main {
+  width: 1200px;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.m_title {
+  height: 70px;
+  line-height: 70px;
+  font-family: "microsoft yahei";
+  font-size: 22px;
+}
+.m_box {
+  width: 1180px;
+  height: auto;
+  background: white;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 120px;
+}
+.mb_mem {
+  height: 80px;
+  line-height: 85px;
+  position: relative;
+}
+.mb_mem .mem_d .mr {
+  margin-left: 40px;
+}
+.mb_mem .mem_d span {
+  margin-right: 60px;
+  font-family: "microsoft yahei";
+  font-size: 14px;
+}
+.mb_mem .mem_d span i {
+  color: #ffa200;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: bold;
+}
+.mb_mem .mem_d span em {
+  font-family: arial;
+}
+.mb_mem .p_state {
+  width: 320px;
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  right: -4px;
+  bottom: 0px;
+  font-family: "microsoft yahei";
+  font-size: 18px;
+  color: white;
+  background-color: #ffa200;
+}
+.mb_mem .p_state em {
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+}
+.mb_mem .p_state:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 30px solid;
+  border-color: #ffffff #ffa200 #ffffff #ffffff;
+  position: absolute;
+  left: -59px;
+}
+.mb_mem .p_state:after {
+  content: url(../images/juan_die.png);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: -6px;
+  bottom: 24px;
+}
+.mb_mem .lv {
+  background-color: #0cbc13!important;
+}
+.mb_mem .lv:before {
+  border-color: white #0cbc13 white white!important;
+}
+.mb_mem .lv:after {
+  content: url(../images/juan_die_lv.png) !important;
+}
+.cg_box {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.cg_li_box .cg_t {
+  height: 50px;
+  line-height: 50px;
+  font-family: "microsoft yahei";
+  font-size: 18px;
+}
+.cg_li_box .cg_t em {
+  position: relative;
+  top: 11px;
+  margin-right: 5px;
+  float: left;
+  width: 30px;
+  height: 30px;
+  background: url(../images/icon.png) no-repeat -268px -197px;
+}
+.cg_li_box .cg_t .icon2 {
+  background-position: -266px -163px;
+}
+.cg_table {
+  width: 1160px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+.cg_table ul {
+  padding-left: 25px;
+  height: 40px;
+  border-bottom: 1px solid #ddd;
+}
+.cg_table ul li {
+  float: left;
+  margin-right: 10px;
+}
+.cg_table .tit {
+  line-height: 40px;
+  font-family: "microsoft yahei";
+  font-size: 14px;
+  font-weight: bold;
+}
+.cg_table .tit li {
+  font-size: 14px;
+}
+.cg_table .list {
+  line-height: 20px;
+  padding-top: 20px;
+  height: 60px;
+}
+.cg_table .list li {
+  font-family: "microsoft yahei";
+  font-size: 14px;
+  overflow: hidden;
+}
+.cg_table .list li em {
+  font-family: arial;
+  font-size: inherit;
+  color: inherit;
+}
+.cg_table .li1 {
+  width: 281px;
+}
+.cg_table .li2 {
+  width: 135px;
+}
+.cg_table .li3 {
+  width: 179px;
+}
+.cg_table .li4 {
+  width: 373px;
+}

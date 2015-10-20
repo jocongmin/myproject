@@ -1,0 +1,243 @@
+@charset "utf-8";
+/*member_center*/
+
+.mr50 {
+    margin-right: 50px;
+}
+
+.mb25 {
+    margin-bottom: 25px;
+}
+
+.t66 {
+    color: #888;
+}
+
+.t99 {
+    color: #999999;
+}
+
+.tc8 {
+    color: #ff9600;
+    font-weight: bold;
+}
+
+.h205 {
+    height: 205px;
+}
+
+.h24 {
+    height: 48px;
+    color: #666;
+}
+
+.tblue {
+    color: #005ea7;
+}
+
+.w200 {
+    width: 200px;
+    color: #333;
+}
+
+.w380 {
+    width: 380px;
+    color: #444;
+}
+
+.w340 {
+    width: 340px;
+    color: #444;
+}
+
+.ml75 {
+    margin-left: 75px;
+}
+
+.ffm {
+    font-family: 'Microsoft YaHei';
+}
+
+.member_title {
+    height: 35px;
+    font-size: 18px;
+    color: #444;
+    font-family: "microsoft yahei";
+    position: relative;
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: 25px;
+}
+
+.hot_pro {
+    background: white;
+    border: 1px solid #dddddd;
+    height: 270px;
+    margin-bottom: 43px;
+}
+
+.hot_pro_t {
+    background: #fafafa;
+    background: url(../images/sidnav_bg.jpg);
+    border-bottom: 1px solid #ddd;
+    height: 35px;
+    line-height: 35px;
+    font-family: 'Microsoft YaHei';
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.actbox {
+    height: 198px;
+    width: 995px;
+    margin: 0 auto;
+    line-height: 24px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.actbox img {
+    width: 132px;
+    height: 105px;
+}
+
+.actbox p {
+    overflow: hidden;
+}
+
+.actbox li {
+    float: left;
+    width: 132px;
+    overflow: hidden;
+    margin-right: 33px;
+}
+
+.like_pro {
+    height: 255px;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.member_center_c {
+    margin-bottom: 45px;
+}
+
+.member_left_c {
+    width: 562px;
+    float: left;
+}
+
+.member_right_c {
+    width: 450px;
+    float: right;
+}
+
+.sign_in {
+    background: url(../images/sign_score.jpg) no-repeat;
+    height: 52px;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 55px;
+    width: 192px;
+}
+
+.help_right {
+    width: 1032px;
+}
+
+.zh_fw {
+    font-size: 16px;
+}
+/*end member_center*/
+
+.question {
+    display: inline-block;
+    color: white;
+    background: #ff9600;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 15px;
+    width: 15px;
+    height: 15px;
+    margin: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mar2 {
+    margin: 2px;
+}
+
+.grade_explain {
+    position: absolute;
+    top: 21px;
+    left: -61px;
+}
+
+.mem_grade {
+    position: relative;
+}
+
+.grade_explain {
+    border: 1px solid #ff9600;
+    box-shadow: 0px 0px 14px #999;
+    -webkit-box-shadow: 0px 0px 14px #999;
+    -moz-box-shadow: 0px 0px 14px #999;
+    -ms-box-shadow: 0px 0px 14px #999;
+    display: none;
+}
+
+.grade_explain table {
+    border: 1px solid #f0efed;
+    background: #fdfbec;
+    color: #666;
+    opacity: 0.9;
+    -webkit-opacity: 0.9;
+    -moz-opacity: 0.9;
+    -ms-opacity: 0.9;
+    -o-opacity: 0.9;
+}
+
+.grade_explain table th,
+.grade_explain table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.thead {
+    background: #f5f5f2;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+
+.close_explain {
+    position: absolute;
+    right: -28px;
+    top: -1px;
+    background: #ff9600;
+    width: 27px;
+    height: 27px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 27px;
+    box-shadow: 0px 0px 5px #999;
+    -webkit-box-shadow: 0px 0px 5px #999;
+    -moz-box-shadow: 0px 0px 5px #999;
+    -ms-box-shadow: 0px 0px 5px #999;
+}
+
+.grade_explain:after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    top: -11px;
+    left: 58px;
+    background: url(../images/to_top.png) center no-repeat;
+}
+.question .wenhao{
+    position: relative;
+    left: 2px;
+}
