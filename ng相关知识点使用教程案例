@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.js"></script>
+
+</head>
+
+<body ng-app="app">
+    <div class="test" ng-controller="myctrl">
+        <span ng-bind="btn" id="apply" ng-click="sys()"></span>
+        <span ng-bind="ttt"></span>
+        <input type="checkbox" ng-model="checkif">
+    </div>
+    <div class="test-two" ng-controller="ctrl-two">
+        <span ng-bind="name"></span>
+    </div>
+</body>
+<script>
+    $(function () {
+        $("#apply").click(function () {
+            var appElement = document.querySelector('#apply'); //获得绑定controllerdom节点
+            var $scope = angular.element(appElement).scope(); //获得$scope对象
+            $scope.btn="465465465";    /*外部修改ng $scope的方法*/
+            console.log('ttt',$scope.ttt);
+            $scope.$apply(); //刷新数据
+        })
+    })
+</script>
+<script>
+    var app = angular.module('app', []);
+    app.controller('myctrl', function ($scope, $rootScope) {
+        $scope.btn = "click";
+        $scope.$watch('btn',function(){
+            alert("dflskj")
+        })
+        $scope.sys = function () {
+                var el = document.querySelector('#apply');
+                /*angular.element(el)需要通过js选择器来传入dom对象，选取dom可以通过id或class、元素等,但是需要注意的是通过jQuery选择器获取的元素传入angular.element(el)是无效的，所以需要通过js方法传入dom*/
+                angular.element(el).html("dsfkdjf");
+            }
+            /*$scope.$watch('btn',function(){
+                alert("dslkfjds")
+            })*/
+        $rootScope.ttt = "ttttttdjfksdfsd";
+        $scope.checkif = false;
+        $scope.checkfun = function () {
+            var e = event.target; //这里event.target返回点击事件所绑定的元素对象，另外调用接口不用传入event即可得到event对象。
+            console.log(event); /*输出事件对象*/
+            console.log('this', this) /*this和$scope的ng区别是this和$scope在ng中都是同样的对象，都有同样的子对象，最主要的区别是$scope绑定的数据可以在dom访问到，而this不可以*/
+            console.log('scope', $scope)
+            console.log(e); /*输出事件对象元素*/
+            console.log($scope.checkif); //ng-model双向绑定了checkbox的状态，当checkbox点击选中后，checkif会返回true。
+            $rootScope.ttt = "465465djfksdfsd";
+        }
+
+    });
+    app.controller('ctrl-two', function ($scope, $rootScope) {
+        /*angular.$watch($rootScope.ttt,function(){
+            $scope.name=$rootScope.ttt;
+        })*/
+        $rootScope.$watch('ttt', function () { /*$rootScope虽然可以读取到全局作用域的变量，但是如果变量有变化的时候却不能同步更新变量到另外的ctrl里面，解决这个问题的方法是用$watch方法，一旦$rootScope的变量有所变化，就会进行相应的操作，比如同步变量到新ctrl里的被$rootScope赋值的$scope变量*/
+            $scope.name = $rootScope.ttt;
+        })
+    });
+</script>
+
+</html>
