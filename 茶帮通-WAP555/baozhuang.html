@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="yes" name="apple-touch-fullscreen" />  
+		<meta content="telephone=no,email=no" name="format-detection" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+		<link rel="stylesheet" type="text/css" href="css/shopping.css?v=1.0">
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<title>商品列表</title>
+	</head>
+	<body>
+		<header class="header order_header">
+			<ul class="flex">
+				<li class="back"><a href="javascript:window.history.go(-1)"><span></span></a></li>
+				<li class="flex_item font ellipsis"><em class="s_icon"></em><input type="search" class="txt" placeholder="搜索你喜欢的"></li>
+				<li class="expand"><a href="javascript:void(0)"><span data-type="paixu"></span></a></li>
+			</ul>
+		</header>
+		<div class="pad_b70 sam_man body baozhuang">
+			<menu class="menu flex white_bg">
+				<div class="flex_item" data-type="all">全部分类<i class="arrow"></i></div>
+				<div class="flex_item" data-type="shi">斤价<i class="arrow"></i></div>
+				<div class="flex_item" data-type="other">其他属性<i class="arrow"></i></div>
+			</menu>
+			<!--选择类型交互-->
+			<div class="select_type">
+				<!--全部-->
+				<div class="alltype flex" data-type="all">
+					<div class="flex_item left">
+						<ul>
+							<li class="clearfix on"><a href="javascript:void(0)">乌龙茶<span>3112<i class="arrow"></i></span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">绿茶<span>2112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">红茶<span>2112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">白茶<span>2112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">包装<span>2112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">茶具<span>2112</span></a></li>
+						</ul>
+					</div>
+					<div class="flex_item right">
+						<ul class="on">
+							<li class="clearfix"><a href="javascript:void(0)">全部<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">安溪铁观音<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">武夷岩茶<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">台湾高山茶<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">广东单枞<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">白芽奇兰<span>3112</span></a></li>
+						</ul>
+						<ul>
+							<li class="clearfix"><a href="javascript:void(0)">全部<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">安溪铁观音<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">武夷岩茶<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">台湾高山茶<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">广东单枞<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">白芽奇兰<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">武夷岩茶<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">台湾高山茶<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">广东单枞<span>3112</span></a></li>
+							<li class="clearfix"><a href="javascript:void(0)">白芽奇兰<span>3112</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<!--其他属性-->
+				<div class="qita white_bg" data-type="other">
+					<div class="flex youhui_show">
+						<div class="flex_item">只显示优惠<em class="youhui">惠</em></div>
+						<div class="flex_item right"><input type="checkbox" class="js-switch"/></div>
+					</div>
+					<div class="select_item">
+						<h1>采摘季节</h1>
+						<div class="_items">
+							<a href="javascript:void(0)" class="on">不限</a><a href="javascript:void(0)">春季</a><a href="javascript:void(0)">夏季</a><a href="javascript:void(0)">秋季</a><a href="javascript:void(0)">秋季</a><a href="javascript:void(0)">明前</a><a href="javascript:void(0)">2014春季</a><a href="javascript:void(0)">2014秋季</a>
+						</div>
+					</div>
+					<div class="select_item">
+						<h1>工艺</h1>
+						<div class="_items">
+							<a href="javascript:void(0)" class="on">不限</a><a href="javascript:void(0)">拖酸</a><a href="javascript:void(0)">消正</a><a href="javascript:void(0)">正味</a><a href="javascript:void(0)">消青</a><a href="javascript:void(0)">碳焙</a>
+						</div>
+					</div>
+					<div class="select_item">
+						<h1>香型</h1>
+						<div class="_items">
+							<a href="javascript:void(0)" class="on">不限</a><a href="javascript:void(0)">粉香</a><a href="javascript:void(0)">火味香</a><a href="javascript:void(0)">咖啡香</a><a href="javascript:void(0)">焦糖香</a><a href="javascript:void(0)">火粟香</a><a href="javascript:void(0)">碳香</a><a href="javascript:void(0)">兰香</a>
+						</div>
+					</div>
+					<div class="flex select_op">
+						<div class="flex_item">重置</div>
+						<div class="flex_item green">完成</div>
+					</div>
+				</div>
+				<!--价格-->
+				<div class="shijin white_bg" data-type="shi">
+					<div class="select_item">
+						<div class="_items">
+							<a href="javascript:void(0)" class="on">不限</a><a href="javascript:void(0)">80元以下</a><a href="javascript:void(0)">80-200元</a><a href="javascript:void(0)">200元以上</a>
+						</div>
+					</div>
+					<div class="range flex">
+						<div class="left">0<i>元/斤</i></div>
+						<div class="flex_item text_center">
+							<input class="range_slider" type="hidden" value="30,70" />
+						</div>
+						<div class="right">500<i>元/斤</i></div>
+					</div>
+					<div class="remark_gray">滑动按钮选择价格范围段</div>
+				</div>
+			</div>
+			<div class="order_product">
+				<div class="pad_l10 white_bg">
+					<a class="flex img_wrap order_pro" href="product_detail.html">
+						<div class="imgwrap"><img src="images/p1.jpg" alt=""></div>
+						<div class="flex_item font">
+							<div class="pro_name">安溪铁观音 韵香1号安溪铁观音 韵香1号安溪铁观音 韵香1号</div>
+							<div class="detial_info">
+								<h1 class="ellipsis"><em class="red"><i>300</i>元/斤</em></h1>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="order_product">
+				<div class="pad_l10 white_bg">
+					<a class="flex img_wrap order_pro" href="product_detail.html">
+						<div class="imgwrap"><img src="images/loading_img.jpg" alt=""></div>
+						<div class="flex_item font">
+							<div class="pro_name">安溪铁观音 韵香1号安溪铁观音 韵香1号安溪铁观音 韵香1号</div>
+							<div class="detial_info">
+								<h1 class="ellipsis"><em class="red"><i>300</i>元/斤</em></h1>
+							</div>
+						</div>
+					</a>
+					<a class="flex img_wrap order_pro" href="login.html">
+						<div class="imgwrap"><img src="images/loading_img.jpg" alt=""></div>
+						<div class="flex_item font">
+							<div class="pro_name">安溪铁观音 韵香1号安溪铁观音 韵香1号安溪铁观音 韵香1号</div>
+							<div class="detial_info">
+								<h1 class="nologin"><em class="red">登录后查看价格</em></h1>
+							</div>
+						</div>
+						<div class="deng">
+							<input type="button" class="btn" value="去登录" />
+						</div>
+					</a>
+				</div>
+			</div>
+			<!--排序交互-->
+			<div class="overlay overlay100 overlayhidden" id="paixu">
+				<div class="paixu">
+					<h1>排序</h1>
+					<ul>
+						<li class="on">默认排序</li>
+						<li>人气优先</li>
+						<li>新品优先</li>
+						<li>价格从低到高</li>
+						<li>价格从高到低</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="js/switchery/switchery.min.js"></script>
+		<script src="js/jquery.range.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>
