@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="yes" name="apple-touch-fullscreen" />  
+		<meta content="telephone=no,email=no" name="format-detection" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+		<link rel="stylesheet" type="text/css" href="js/swiper/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script>
+			window.onload=function(){
+				 var slider=new Swiper(".swiper-container",{
+				 	  // 如果需要分页器
+		   			pagination: '.swiper-pagination',
+		   			autoplay : 5000,
+		   			autoplayDisableOnInteraction : false
+				 })
+			}
+		</script>
+		<title>首页</title>
+	</head>
+	<body>
+		<header class="header">
+			<ul class="flex">
+				<li class="back hidden"><a href=""><span></span></a></li>
+				<li class="flex_item font ellipsis">茶帮通</li>
+				<li class="expand"><a href="message.html"><span></span></a></li>
+			</ul>
+		</header>
+		<div class="body pad_b70">
+			<div class="imgwrap banner swiper-container">
+				<div class="clearfix swiper-wrapper">
+					<div class="swiper-slide">
+						<a href=""><img src="images/banner.jpg" alt=""></a>
+					</div>
+					<div class="swiper-slide">
+						<a href=""><img src="images/banner.jpg" alt=""></a>
+					</div>
+					<div class="swiper-slide">
+						<a href=""><img src="images/banner.jpg" alt=""></a>
+					</div>
+					<div class="swiper-slide">
+						<a href=""><img src="images/banner.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="pad_l10 mar_t15">
+				<div class="index_top">
+					<div class="flex">
+						<a class="flex_item" href="sample_list.html">
+							<div class="flex">
+								<div class="icon"><em></em></div>
+								<div class="flex_item">
+									<h1 class="ellipsis_clip">领样品</h1>
+									<h2>先尝后买更放心</h2>
+								</div>
+							</div>
+						</a>
+						<a class="flex_item" href="productlist.html">
+							<div class="flex">
+								<div class="icon icon1"><em></em></div>
+								<div class="flex_item">
+									<h1 class="ellipsis_clip">批茶叶</h1>
+									<h2>先尝后买更放心</h2>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="flex">
+						<a class="flex_item" href="baozhuang.html">
+							<div class="flex">
+								<div class="icon icon2"><em></em></div>
+								<div class="flex_item">
+									<h1 class="ellipsis_clip">批包装</h1>
+									<h2>先尝后买更放心</h2>
+								</div>
+							</div>
+						</a>
+						<a class="flex_item" href="baozhuang.html">
+							<div class="flex">
+								<div class="icon icon3"><em></em></div>
+								<div class="flex_item">
+									<h1 class="ellipsis_clip">批茶具</h1>
+									<h2>先尝后买更放心</h2>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="flex ad">
+					<div class="flex_item left">
+						<a href="" class="imgwrap"><img src="images/i1.jpg" alt="">
+							<div class="lefttime" id="lefttime" data-time="86400"><em>00</em>:<em>00</em>:<em>00</em></div>
+						</a>
+						<a href="" class="imgwrap"><img src="images/i5.jpg" alt=""></a>
+					</div>
+					<div class="flex_item right">
+						<a href="" class="imgwrap"><img src="images/i2.jpg" alt=""></a>
+						<a href="" class="imgwrap"><img src="images/i3.jpg" alt=""></a>
+						<a href="" class="imgwrap"><img src="images/i4.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<ul class="flex">
+					<li class="flex_item on">
+						<a href="index.html">
+							<em class="icon0"></em>
+							<div class="font">首页</div>
+						</a>
+					</li>
+					<li class="flex_item">
+						<a href="samplemanage.html">
+							<em class="icon1"></em>
+							<div class="font">样品管理</div>
+						</a>
+					</li>
+					<li class="flex_item">
+						<a href="shoppingcart.html">
+							<em class="icon2"><i>99</i></em>
+							<div class="font">购物车</div>
+						</a>
+					</li>
+					<li class="flex_item">
+						<a href="center.html">
+							<em class="icon3"></em>
+							<div class="font">我的</div>
+						</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

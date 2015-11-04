@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="yes" name="apple-touch-fullscreen" />  
+		<meta content="telephone=no,email=no" name="format-detection" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<title>注册</title>
+	</head>
+	<body>
+		<header class="header">
+			<ul class="flex">
+				<li class="back"><a href="javascript:window.history.go(-1)"><span></span></a></li>
+				<li class="flex_item font ellipsis">注册</li>
+				<li class="expand hidden"><a href="javascript:void(0)"><span></span></a></li>
+			</ul>
+		</header>
+		<div class="mar_t15 body">
+			<form class="formwrap">
+				<div class="flex pad_l10 form">
+					<div class="form_l">手机号</div>
+					<div class="flex_item"><input type="text" class="txt" placeholder="请输入手机号码"></div>
+				</div>
+				<div class="btnwrap pad_l10">
+					<input type="button" value="下一步" class="btn" onclick="window.location.href='fillcode.html'">
+				</div>
+			</form>
+			<div class="flex pad_l10 agree">
+				<div class="flex_item">注册即视为同意<a href="">《茶帮通服务协议》</a>。</div>
+			</div>
+		</div>
+	</body>
+</html>

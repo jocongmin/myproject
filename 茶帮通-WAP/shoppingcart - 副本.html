@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="yes" name="apple-touch-fullscreen" />  
+		<meta content="telephone=no,email=no" name="format-detection" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+		<link rel="stylesheet" type="text/css" href="css/shopping.css?v=1.0">
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="js/switchery/switchery.min.css">
+		<title>购物车</title>
+	</head>
+	<body>
+		<header class="header">
+			<ul class="flex">
+				<li class="back"><a href="javascript:window.history.go(-1)"><span></span></a></li>
+				<li class="flex_item font ellipsis">购物车</li>
+				<li class="expand hidden"><a href="javascript:void(0)"></a></li>
+			</ul>
+		</header>
+		<div class="shoppingcart pad_b120 body">
+			<a class="person" href="selectaddress.html">
+				<div class="flex">
+					<div class="flex_item"><em></em>无尽的故事</div>
+					<div class="flex_item"><em class="icon1"></em>159-8888-6999</div>
+				</div>
+				<div class="adress">
+					收货地址:福建省厦门市思明区岭兜二里161号
+				</div>
+				<i class="arrow"></i>
+			</a>
+			<div class="pay pad_l10 mar_t15">
+				<div class="flex form">
+					<div class="form_l">支付方式：</div>
+					<div class="flex_item"><span class="sl_green on">在线支付</span><span class="sl_green">货到付款</span></div>
+				</div>
+				<div class="flex form de">
+					<div class="form_l">配送方式：</div>
+					<div class="flex_item"><span class="sl_green on">同城快递</span><span class="sl_green">自提</span></div>
+				</div>
+				<div class="flex form remark_gray">
+					我们将根据您所在的区域选择对应的快递。
+				</div>
+			</div>
+			<div class="mar_t15 pro">
+				<div class="item">
+					<div class="flex img_wrap">
+						<div class="imgwrap"><img src="images/p1.jpg" alt=""></div>
+						<div class="flex_item font">安溪铁观音 韵香1号<span class="red"><em>¥</em>988</span></div>
+						<div class="cal">
+							<div class="flex">
+								<div  class="reduce"><em></em></div>
+								<div  class="flex_item"><input type="text" class="txt" value="12"></div>
+								<div  class="plus"><em></em></div>
+							</div>
+						</div>
+					</div>
+					<div class="flex img_wrap">
+						<div class="imgwrap"><img src="images/p1.jpg" alt=""></div>
+						<div class="flex_item font">安溪铁观音 韵香1号<span class="red"><em>¥</em>988</span></div>
+						<div class="cal">
+							<div class="flex">
+								<div  class="reduce"><em></em></div>
+								<div  class="flex_item"><input type="text" class="txt" value="12"></div>
+								<div  class="plus"><em></em></div>
+							</div>
+						</div>
+					</div>
+					<div class="heji">
+						<div class="hj">合计：<em class="red">10000</em>元</div>
+						<div class="hj">运费：<em class="red">10000</em>元</div>
+					</div>
+					<div class="keyong flex">
+						<div class="flex_item">可用100元金额抵用</div>
+						<div class="flex_item right"><input type="checkbox" class="js-switch" checked /></div>
+					</div>
+					<div class="rem">
+						<input type="text" class="txt" placeholder="订单备注">
+					</div>
+				</div>
+			</div>
+			<footer class="shop_bottom home_bottom">
+				<div class="flex">
+					<div class="flex_item">
+						<h1>实付款</h1>
+						<h2 class="red">1450元</h2>
+					</div>
+					<div class="flex_item right"><input type="button" value="立即下单" class="btn" onclick="window.location.href='checkstant.html'"></div>
+				</div>
+			</footer>
+		</div>
+		<footer class="footer">
+				<ul class="flex">
+					<li class="flex_item on">
+						<a href="index.html">
+							<em class="icon0"></em>
+							<div class="font">首页</div>
+						</a>
+					</li>
+					<li class="flex_item">
+						<a href="samplemanage.html">
+							<em class="icon1"></em>
+							<div class="font">样品管理</div>
+						</a>
+					</li>
+					<li class="flex_item">
+						<a href="shoppingcart.html">
+							<em class="icon2"><i>99</i></em>
+							<div class="font">购物车</div>
+						</a>
+					</li>
+					<li class="flex_item">
+						<a href="center.html">
+							<em class="icon3"></em>
+							<div class="font">我的</div>
+						</a>
+					</li>
+				</ul>
+			</footer>
+		<script src="js/switchery/switchery.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="stylesheet" href="css/cssreset.css">
+    <link rel="stylesheet" href="css/activity.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/TouchSlide.1.1.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script>
+    $(function() {
+        $.scrollIt({
+            scrollTime: 600,
+            topOffset: -80,
+        });
+    });
+    </script>
+    <title>Document</title>
+</head>
+<style>
+.title_face {
+    display: inline-block;
+}
+</style>
+
+<body>
+    <header class="header">
+        <ul class="flex">
+            <li class="back"><a href="setting.html"><span></span></a></li>
+            <li class="flex_item font ellipsis">促销活动</li>
+        </ul>
+    </header>
+    <main>
+        <div class="banner">
+            <div id="slideBox" class="slideBox">
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <a class="pic" href="#"><img src="images/banner01.jpg" /></a>
+                        </li>
+                        <li>
+                            <a class="pic" href="#"><img src="images/banner02.jpg" /></a>
+                        </li>
+                        <li>
+                            <a class="pic" href="#"><img src="images/banner01.jpg" /></a>
+                        </li>
+                        <li>
+                            <a class="pic" href="#"><img src="images/banner02.jpg" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hd">
+                    <ul></ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+            TouchSlide({
+                slideCell: "#slideBox",
+                titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                mainCell: ".bd ul",
+                effect: "leftLoop",
+                autoPage: true, //自动分页
+                autoPlay: true //自动播放
+            });
+            </script>
+        </div>
+        <div class="main">
+            <nav>
+                <div class="nav_list">
+                    <ul>
+                        <li data-scroll-nav='1' id="nav_f" class="btl">热销款</li>
+                        <li data-scroll-nav='2'>半斤装</li>
+                        <li data-scroll-nav='3'>一斤装</li>
+                        <li data-scroll-nav='4'>散茶</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="title_face" data-scroll-index='1'>
+                <img src="images/title_face.jpg" height="70" width="640" alt="">
+            </div>
+            <div class="pro_list">
+                <ul>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>25套/件</span> 饮茶之乐 2纸盒 米色
+                        </p>
+                        <p class="pri_c">零售价<span>￥15</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥11</span>
+                            <!-- <span class="pa_3">单件￥39</span> -->
+                        </p>
+                        <span class="appprice">半斤<br>装</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>25套/件</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="title_face" data-scroll-index='2'>
+                <img src="images/title_face.jpg" height="70" width="640" alt="">
+            </div>
+            <div class="pro_list">
+                <ul>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <div class="cl"></div>
+                </ul>
+            </div>
+            <div class="title_face" data-scroll-index='3'>
+                <img src="images/title_face.jpg" height="70" width="640" alt="">
+            </div>
+            <div class="pro_list">
+                <ul>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <div class="cl"></div>
+                </ul>
+            </div>
+            <div class="title_face" data-scroll-index='4'>
+                <img src="images/title_face.jpg" height="70" width="640" alt="">
+            </div>
+            <div class="pro_list">
+                <ul>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <div class="cl"></div>
+                </ul>
+            </div>
+            <div class="title_face" data-scroll-index='5'>
+                <img src="images/title_face.jpg" height="70" width="640" alt="">
+            </div>
+            <div class="pro_list">
+                <ul>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                        <span class="appprice">手机<br>专享</span>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <li class="pro_box">
+                        <img src="images/pro.png" height="400" width="400" alt="">
+                        <p class="pro_t">
+                            <span>2件装</span>  菊正宗 日本酒保湿温和 卸妆啫喱 200g*2
+                        </p>
+                        <p class="pri_c">国内价<span>￥159</span></p>
+                        <p class="pri_act">
+                            <span class="pa_1">活动价</span>
+                            <span class="pa_2_num">￥78</span>
+                            <span class="pa_3">单件￥39</span>
+                        </p>
+                    </li>
+                    <div class="cl"></div>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="bottom_footer">
+            <p class="nav_one">
+                <span class="go_c_web"><a href="">去电脑版</a></span>
+                <span class="regi"><a href="">登录</a>| <a href="">注册</a></span>
+            </p>
+            <p class="copyright">
+                考拉海购
+                <br> 网易公司版权所有@1997-2015
+            </p>
+        </div>
+    </footer>
+    <div class="tc_nav clearfix">
+        <div class="tc_btn clearfix">
+            <em>切换楼层</em>
+            <i></i>
+        </div>
+        <div class="tc_nav_d clearfix">
+            <ul>
+                <li data-scroll-nav='1' id="nav_f">面部护理</li>
+                <li data-scroll-nav='2'>水乳护肤</li>
+                <li data-scroll-nav='3'>面露精华</li>
+                <li data-scroll-nav='4'>防嗮修复</li>
+                <li data-scroll-nav='5'>面部护理</li>
+            </ul>
+        </div>
+    </div>
+    <div class="zhezc">
+    </div>
+</body>
+<script>
+$(function() {
+    var kkm = $(".nav_list").offset().top;
+    console.log(kkm);
+    $(window).scroll(function(event) {
+        var kk = $(this).scrollTop();
+        if (kk > kkm) {
+            $("nav").addClass('nav_fixed');
+            $("#nav_f").removeClass('btl');
+        } else {
+            $("nav").removeClass('nav_fixed');
+            $("#nav_f").addClass('btl');
+        }
+    });
+})
+$(function() {
+    $(".down").click(function() {
+        $(".tc_nav,.zhezc").fadeIn();
+    })
+    $(".tc_btn i,.tc_nav_d li,.zhezc").click(function() {
+        $(".tc_nav,.zhezc").fadeOut();
+    })
+})
+
+</script>
+
+</html>

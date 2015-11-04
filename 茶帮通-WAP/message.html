@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="html_label">
+	<head>
+		<meta charset="utf-8">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="yes" name="apple-touch-fullscreen" />  
+		<meta content="telephone=no,email=no" name="format-detection" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+		<link rel="stylesheet" type="text/css" href="css/message.css">
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/iscroll-probe.js"></script>
+		<title>消息列表</title>
+	</head>
+	<body class="body_label">
+			<header class="header">
+				<ul class="flex">
+					<li class="back"><a href="javascript:window.history.go(-1)"><span></span></a></li>
+					<li class="flex_item font ellipsis">消息列表</li>
+					<li class="expand hidden"><a href="javascript:void(0)"><span></span></a></li>
+				</ul>
+			</header>
+			<div class="msg_list body scroller_list" id="message">
+				<div class="scroller_wrap">
+					<!--下拉刷新-->
+					<div class="pullDown">
+						<span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+					</div>
+					<!--下拉刷新-->
+					<div class="getdata">
+						<div class="wrap" data-expand = "0">
+							<div class="summary break">
+								<h1>订单进度</h1>
+								<div class="summary_f break">您的订单：2389238付款成功，我们会尽快为您处理。为您处理尽快为您处理您您处理……,恭喜您，您的订单返现到账，订单号：3243245；您可用到我的钱包查看您的返现余额的收</div>
+								<div class="arrow"><em></em></div>
+							</div>
+							<!--<div class="detial_wrap">
+								<div class="detial">
+									<h1>订单进度</h1>
+									<div class="summary_f break">恭喜您，您的订单返现到账，订单号：3243245；您可用到我的钱包查看您的返现余额的收支明细，也可以电话联系我们客服为您服务，感谢您对茶帮通的支持。</div>
+								</div>
+							</div>-->
+						</div>
+						<div class="wrap">
+							<div class="summary break">
+								<h1>订单进度</h1>
+								<div class="summary_f">您的订单：2389238付款成功，我们会尽快为您处理。为您处理尽快为您处理您您处理……</div>
+							</div>
+						</div>
+						<div class="wrap">
+							<div class="summary break">
+								<h1>订单进度</h1>
+								<div class="summary_f">您的订单：2389238付款成功，我们会尽快为您处理。为您处理尽快为您处理您您处理……</div>
+							</div>
+						</div>
+						<div class="wrap">
+							<div class="summary break">
+								<h1>订单进度</h1>
+								<div class="summary_f">您的订单：2389238付款成功，我们会尽快为您处理。为您处理尽快为您处理您您处理……</div>
+							</div>
+						</div>
+						<div class="wrap" data-expand = "0">
+							<div class="summary break">
+								<h1>订单进度</h1>
+								<div class="summary_f break">您的订单：2389238付款成功，我们会尽快为您处理。为您处理尽快为您处理您您处理……恭喜您，您的订单返现到账，恭喜您，您的订单返现到账，</div>
+								<div class="arrow"><em></em></div>
+							</div>
+							<!--<div class="detial_wrap">
+								<div class="detial">
+									<h1>返现通知</h1>
+									<div class="summary_f break">恭喜您，您的订单返现到账，订单号：3243245；您可用到我的钱包查看您的返现余额的收支明细，也可以电话联系我们客服为您服务，感谢您对茶帮通的支持。</div>
+								</div>
+							</div>-->
+						</div>
+					</div>
+					<!--上拉刷新-->
+					<div class="pullUp">
+						<span class="pullUpIcon"></span><span class="pullUpLabel">上拉刷新...</span>
+					</div>
+					<!--上拉刷新-->
+				</div>
+			</div>
+
+		<script src="js/common.js"></script>
+		<script src="js/iscrollcomon.js"></script>
+		<script type="text/javascript">
+				//上拉返回的函数
+				function pullDownAction (){
+					//数据放回成功的时候
+					setTimeout(function(){
+						if($(".pullDown").hasClass('loading')){
+							$(".pullDown").removeClass('loading').children('.pullDownLabel').html("更新成功...");
+							isLoading=false;//数据返回，清除加载标志
+							//这里添加数据
+							setTimeout(function(){
+								myScroll.scrollTo(0,-topOffset,500,IScroll.utils.ease.quadratic);
+								$(".pullDown").children('.pullDownLabel').html("下拉刷新...");
+							},1000);
+							//添加数据时候，刷新dom,必须的
+							myScroll.refresh();
+						}
+					},3000);
+				}
+				//下拉返回的函数
+				function pullUpAction (){
+					setTimeout(function(){
+						if($(".pullUp").hasClass('loading')){
+							$(".pullUp").removeClass('loading').children('.pullUpLabel').html("上拉刷新...");
+							isLoading=false;//数据返回，清除加载标志
+							//这里添加数据
+							//添加数据时候，刷新dom,必须的
+							myScroll.refresh();
+						}
+					},3000);
+				}
+			</script>
+	</body>
+</html>

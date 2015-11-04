@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="yes" name="apple-touch-fullscreen" />  
+		<meta content="telephone=no,email=no" name="format-detection" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+		<link rel="stylesheet" type="text/css" href="css/shopping.css?v=1.0">
+		<link rel="stylesheet" type="text/css" href="js/swiper/swiper.min.css">
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+		<title>商品详情</title>
+		<script>
+			window.onload=function(){
+				 var slider=new Swiper(".swiper-container",{
+				 	  // 如果需要分页器
+		   			pagination: '.swiper-pagination',
+		   			autoplayDisableOnInteraction : false,
+		   			onSlideChangeEnd: function(swiper){
+		   				$("#imgnum").children("span").text(swiper.activeIndex+1);
+				    }
+				 })
+			}
+		</script>
+	</head>
+	<body>
+		<header class="header">
+			<ul class="flex">
+				<li class="back"><a href="javascript:window.history.go(-1)"><span></span></a></li>
+				<li class="flex_item font ellipsis">商品详情</li>
+				<li class="expand"><a href="javascript:void(0)"><span data-type ="getmore"></span></a></li>
+			</ul>
+		</header>
+		<div class="product_detail body" id="pro_detail">
+			<!--右上角点击交互-->
+			<nav class="product_detail_n">
+				<div class="white_bg flex">
+					<a class="flex_item" href="message.html">
+						<em class="icon1"></em>
+						<div class="font">消息</div>
+					</a>
+					<a class="flex_item" href="index.html">
+						<em></em>
+						<div class="font">首页</div>
+					</a>
+					<div class="arrow"></div>
+				</div>
+			</nav>
+			<div class="banner">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="images/p3.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/p3.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/p3.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/p3.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="num" id="imgnum"><span>1</span>/4</div>
+			</div>
+			<div class="mar_t15 pad_l10 summary">
+				正宗武夷山桐木关 金骏眉（黄芽）蜜香型210g 一级私房茶 礼盒<span class="green">精选茶树细嫩单芽</span>
+				<div class="price">
+					<!--未登录-->
+					<span class="gray8">登录后查看价格</span><a href="login.html" class="btnred">立即登录</a>
+					<!--未登录-->
+					<!--已登录-->
+					<!--<div class="logined"><span class="red">¥<em>800</em>元/斤</span><span class="zx">手机专享价格</span><span class="mp">市场参考价：¥555</span></div>-->
+					<!--已登录-->
+				</div>
+				<div class="sum_d">
+					<div class="flex">
+						<div class="flex_item gray8">产地：安溪蓝田</div>
+						<div class="flex_item gray8">原料：铁观音青叶</div>
+					</div>
+					<div class="flex">
+						<div class="flex_item gray8">工艺：消青</div>
+						<div class="flex_item gray8">工艺：消青</div>
+					</div>
+				</div>
+			</div>
+			<div class="mar_t15 pad_l10 pin">
+				<div class="title flex">
+					<div class="flex_item">审评品鉴</div>
+					<div class="flex_item right">审评得分：95</div>
+				</div>
+				<div class="starlist">
+					<div class="flex">
+						<div class="flex_item"><span class="gray8">外观</span><ul class="rating_box"><div class="rating" style="width: 30%;"></div></ul><span class="green">95分</span></div>
+						<div class="flex_item right"><span class="gray8">香气</span><ul class="rating_box"><div class="rating" style="width: 10%;"></div></ul><span class="green">95分</span></div>
+					</div>
+					<div class="flex">
+						<div class="flex_item"><span class="gray8">滋味</span><ul class="rating_box"><div class="rating" style="width: 30%;"></div></ul><span class="green">95分</span></div>
+						<div class="flex_item right"><span class="gray8">汤色</span><ul class="rating_box"><div class="rating" style="width: 30%;"></div></ul><span class="green">95分</span></div>
+					</div>
+					<div class="flex">
+						<div class="flex_item"><span class="gray8">叶底</span><ul class="rating_box"><div class="rating" style="width: 30%;"></div></ul><span class="green">95分</span></div>
+					</div>
+				</div>
+				<div class="result">品鉴结果：铁罗汉武夷传统四大珍贵名枞之一、香气馥郁幽长，入口醇厚、而且多次冲泡仍有有余香、叶底绿叶红镶显。</div>
+				<div class="ren">评茶师：吴志明&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级评茶师：应雪平     </div>
+			</div>
+			<div class="mar_t15 pad_l10 pin">
+				<div class="title flex">
+					<div class="flex_item">宝贝评价（18）</div>
+					<div class="flex_item right">客户评分：95</div>
+				</div>
+				<div class="commentlist">
+					<div class="list">
+						<div class="info">
+							<div class="flex top">
+								<div class="flex_item left"><img src="images/touxiang.jpg" class="img" alt="" />132****4560</div>
+								<div class="flex_item right">2015-03-09</div>
+							</div>
+							<div class="detail">茶色润，汤色红艳，口感醇，回甘不错；门店里面批发都卖500元一斤。</div>
+						</div>
+					</div>
+					<a href="commentlist.html" class="getmore">查看更多评价</a>
+				</div>
+			</div>
+			<!--<div class="pullup"><em></em>向上滑动显示图文详情</div>-->
+			<div class="form_wrap tuwen mar_t15" id="tuwen">
+				<nav class="navi flex">
+					<a href="javascript:void(0)" class="flex_item on">图文详情</a>
+					<a href="javascript:void(0)" class="flex_item" data-load="0">产品参数</a>
+				</nav>
+				<div class="tuwen_wrap">
+					<div class="pad_l10 mar_t15" id="tuwen1">
+						<div class="pullUp loading">
+							<span class="pullUpIcon"></span><span class="pullUpLabel">数据加载中...</span>
+						</div>
+						<!--<img src="images/p7.jpg"><img src="images/p6.jpg"><img src="images/p5.jpg">-->
+					</div>
+					<div class="form_wrap mar_t15" id="tuwen2">
+						<div class="pullUp loading">
+							<span class="pullUpIcon"></span><span class="pullUpLabel">数据加载中...</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="data" style="display:none">
+			<div class="flex pad_l10 form">
+			<div class="form_l">采摘季节</div>
+				<div class="flex_item">春季</div>
+			</div>
+			<div class="flex pad_l10 form">
+				<div class="form_l">等级</div>
+				<div class="flex_item">核心产区二级</div>
+			</div>
+			<div class="flex pad_l10 form">
+				<div class="form_l">原料</div>
+				<div class="flex_item">黄芽早</div>
+			</div>
+			<div class="flex pad_l10 form">
+				<div class="form_l">生产日期</div>
+				<div class="flex_item">2014年3月</div>
+			</div>
+			<div class="flex pad_l10 form">
+				<div class="form_l">拼配茶/单版茶</div>
+				<div class="flex_item">单版茶</div>
+			</div>
+			<div class="flex pad_l10 form">
+				<div class="form_l">产地</div>
+				<div class="flex_item">安徽省黄山</div>
+			</div>
+			<div class="flex pad_l10 form">
+				<div class="form_l">原料</div>
+				<div class="flex_item">黄芽早</div>
+			</div>
+			<div class="flex pad_l10 form">
+				<div class="form_l">合作社</div>
+				<div class="flex_item">上海新妹茶叶有限公司</div>
+			</div>
+			<div class="flex pad_l10 form">
+				<div class="form_l">保质期</div>
+				<div class="flex_item">一年半</div>
+			</div>
+			<div class="flex pad_l10 form">
+				<div class="form_l">责任茶师</div>
+				<div class="flex_item">胡妹新</div>
+			</div>
+			<div class="flex pad_l10 form">
+				<div class="form_l">工艺</div>
+				<div class="flex_item">手工</div>
+			</div>
+			<div class="flex pad_l10 form">
+				<div class="form_l">工艺</div>
+				<div class="flex_item">手工</div>
+			</div>
+			<div class="flex pad_l10 form">
+				<div class="form_l">香型</div>
+				<div class="flex_item">花香</div>
+			</div>
+			<div class="flex pad_l10 form">
+				<div class="form_l">建议零售价</div>
+				<div class="flex_item">2000以上</div>
+			</div>
+		</div>
+		<footer class="pro_bottom">
+			<ul class="flex">
+				<li class="flex_item back">
+					<div class="flex">
+						<a href="" class="flex_item">
+							<i><b class="circle">99</b></i>
+							<div class="font">购物车</div>
+						</a>
+						<a href="" class="flex_item">
+							<i class="icon1"></i>
+							<div class="font">收藏</div>
+						</a>
+					</div>
+				</li>
+				<li class="flex_item">
+					<a href="javascript:void(0)" class="flex_item org showcal">领样品</a>
+				</li>
+				<li class="flex_item">
+					<a href="javascript:void(0)" class="flex_item red showcal">批茶叶</a>
+				</li>
+			</ul>
+		</footer>
+		<!--领茶叶交互-->
+		<div class="overlay overlay100" id="ling_chaye">
+			<div class="ling_chaye">
+				<div class="pad_l10">
+					<div class="flex to">
+						<div class="imgwrap"><img src="images/p4.jpg" alt=""></div>
+						<div class="flex_item">
+							<h1 class="red">¥<i>499</i>元/斤</h1>
+							<h2>库存611斤</h2>
+						</div>
+						<div class="closed"><em></em></div>
+					</div>
+					<div class="flex">
+						<div class="flex_item left">购买数量</div>
+						<div class="flex_item right">
+							<div class="cal">
+								<div class="flex">
+									<div  class="reduce"><em></em></div>
+									<div  class="flex_item"><input type="text" class="txt" value="12"></div>
+									<div  class="plus"><em></em></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btnwrap">
+					<input type="button" value="确定" class="btn red"/>
+				</div>
+			</div>
+		</div>
+		<script src="js/common.js"></script>
+		<script>
+			var locked=false;
+			var locked1=false;
+			$(window).scroll(function(){
+				var et=$("#tuwen").offset().top;
+				var wt=$(window).scrollTop();
+				var eh=$("#tuwen .navi").outerHeight();
+				var wh=$(window).height();
+				//头部固定
+				if(wt>=et){
+					$("#tuwen .navi").css({
+						"position":"fixed",
+						"left":0,
+						"top":0
+					});
+				}
+				else{
+					$("#tuwen .navi").removeAttr("style");
+				}
+				//可视区域
+				if(wt-(et-wh)>50){
+					if(!locked){
+						locked=true;
+						$.ajax({
+							data:{},
+							type:'POST',
+							dataType:'text',
+							url:'test.php',
+							success:function(result){
+								$("#tuwen1").html(result);
+							},
+							error:function(result){
+								locked=false;
+							}
+						});
+					}
+				}
+			});
+			$("#tuwen .navi a").click(function(){
+				var index=$(this).index();
+				$(this).siblings().removeClass("on");
+				$(this).addClass("on");
+				var data=$(this).attr("data-load");
+				$(".tuwen_wrap").children().hide().eq(index).show();
+				if(data!=undefined&&data!="1"&&!locked1){
+					locked1=true;
+					$.ajax({
+						data:{},
+						type:'POST',
+						dataType:'text',
+						url:'test.php',
+						success:function(result){
+							$("#tuwen2").html($("#data").html());
+							$("#tuwen .navi a").eq(index).attr("data-load","1");
+						},
+						error:function(result){
+							locked1=false;
+						}
+					});
+				}
+			});
+		</script>
+	</body>
+</html>
