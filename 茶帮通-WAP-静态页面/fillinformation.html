@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="yes" name="apple-touch-fullscreen" />  
+		<meta content="telephone=no,email=no" name="format-detection" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<title>完善信息</title>
+	</head>
+	<body>
+		<header class="header">
+			<ul class="flex">
+				<li class="back hidden"><a href="javascript:window.history.go(-1)"><span></span></a></li>
+				<li class="flex_item font ellipsis">完善信息</li>
+				<li class="expand hidden"><a href="javascript:void(0)"><span></span></a></li>
+			</ul>
+		</header>
+		<div class="mar_t15 pad_b70 body" id="fillinfo">
+			<div class="pad_l10 intro">恭喜您注册成功，请填写以下资料并等待审核，审核后才可以询价和下单，如需帮助，请拨打400-996-3399</div>
+			<form class="formwrap">
+				<div class="flex pad_l10 form">
+					<div class="form_l">登陆账号</div>
+					<div class="flex_item"><input type="text" class="txt" readonly="readonly" value="18650000000"></div>
+				</div>
+				<div class="flex pad_l10 form">
+					<div class="form_l">店铺名称</div>
+					<div class="flex_item"><input type="text" class="txt" placeholder="请输入你的店铺名称"></div>
+				</div>
+				<div class="flex pad_l10 form">
+					<div class="form_l">联系人</div>
+					<div class="flex_item"><input type="text" class="txt" placeholder="请输入联系人姓名"></div>
+				</div>
+				<div class="mar_t15 moreinfo">
+					<h1>店铺图片<em class="red">（必填）</em></h1>
+					<div class="flex">
+						<div class="upload_image">
+							<i class="gray">添加店铺图片</i>
+						</div>
+						<div class="flex-item intro">
+							<div class="table">
+								<div class="table_cell">
+									<p>清晰正面图片<br>必须包含完整的营业执照信息</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mar_t15 moreinfo">
+					<h1>营业执照<em>（选填）</em></h1>
+					<div class="flex">
+						<div class="upload_image">
+							<i class="gray">添加营业执照</i>
+						</div>
+						<div class="flex-item intro">
+							<div class="table">
+								<div class="table_cell">
+									<p>清晰正面图片<br>必须包含完整的营业执照信息</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h1>税务登记<em>（选填）</em></h1>
+					<div class="flex">
+						<div class="upload_image">
+							<i class="gray">添加税务登记</i>
+						</div>
+						<div class="flex-item intro">
+							<div class="table">
+								<div class="table_cell">
+									<p>清晰正面图片<br>必须包含完整的税务登记信息</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom flex">
+					<div class="flex_item"><input type="button" value="提交资料" class="btn"></div>
+					<div class="flex_item"><input type="button" value="退出登录" class="btn red"></div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,95 @@
+.privilege .mar_t15{
+	background-color: #fff;
+	border-top:solid 1px #ddd;
+	border-bottom:solid 1px #ddd;
+}
+.privilege .process{
+	padding: 14px 15px 15px 15px;
+}
+.privilege .process .outer{
+	width: 100%;
+	height: 16px;
+	line-height: 16px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background-color: #b8b7b8;
+	color: #fff;
+	font-size: 10px;
+	position: relative;
+}
+.privilege .process .inner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 50%;
+	height: 16px;
+	line-height: 16px;
+	background-color: #219946;
+	-webkit-border-radius: 8px 0 0 8px;
+	-moz-border-radius: 8px 0 0 8px;
+	border-radius: 8px 0 0 8px;
+}
+.privilege .process .outer .num{
+	padding: 0 0 0 8px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.privilege .remark{
+	font-size: 11px;
+	color: #999999;
+	line-height: 1.2;
+	padding: 5px 5px 0 5px;
+}
+.privilege .pad_l10{
+	padding: 7px 15px;
+}
+.privilege .green{
+	font-size: 18px;
+	color: #219946;	
+}
+.privilege .flex{
+	text-align: center;
+	font-size: 12px;
+	color: #666666;
+}
+.privilege .flex h2 em{
+	font-size: 10px;
+	color: #999999;
+}
+.privilege ul li{
+	border-right: solid 1px #ccc;
+}
+.privilege ul li:last-child{
+	border-right: none;
+}
+.privilege table{
+	width: 100%;
+	text-align: center;
+}
+.privilege table th{
+	font-size: #333333;
+	font-size: 14px;
+	font-weight: normal;
+	background-color: #e3e3e3;
+	border-right: solid 1px #fff;
+	padding:7px 0;
+}
+.privilege table td{
+	text-align: center;
+	font-size: 10px;
+	border: solid 1px #ddd;
+	padding:7px 0;
+}
+.privilege table tr th:last-child,.privilege table tr td:last-child{
+	border-right: none;
+}
+.privilege table tr:nth-of-type(odd){
+	background-color: #f3f3f3;
+}
+.privilege table tr:last-child td{
+	border-bottom: 0;
+}

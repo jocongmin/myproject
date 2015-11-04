@@ -1,0 +1,40 @@
+section {
+  background: white;
+}
+section > div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-left: 10px;
+}
+section > div span {
+  display: inline-block;
+  width: 38%;
+  color: #3d4245;
+}
+section > div input {
+  border: none;
+  font-size: 16px;
+  padding: 0;
+  padding-right: 2em;
+  width: 75%!important;
+}
+section > div textarea {
+  line-height: 25px;
+  padding-right: 2em;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #ccc;
+  font-size: 16px;
+}
+.fin_detail select {
+    width: 100%;
+    color: #999;
+    font-size: 14px;
+    line-height: 18px;
+}
+.fin_detail{
+  padding-left: 10px;
+  padding-right: 10px;
+}

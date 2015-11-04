@@ -1,0 +1,134 @@
+/*---登录Begin---*/
+.formwrap .form:first-child{
+	border-top: solid 1px #dddddd;
+}
+.goreg a{
+	font-size: 14px;
+	color: #60656f;
+	line-height: 1;
+}
+.goreg .flex_item:last-child a{
+	text-align: right;
+}
+#login .header .expand{
+	display: none;
+}
+/*---登录End---*/
+.agree,.agree a{
+	font-size: 12px;
+	color: #999999;
+}
+.agree a{
+	display: inline-block;
+}
+.intro{
+	font-size: 14px;
+	color: #666666;
+	padding: 0px 15px 15px 15px;
+}
+.codewrap .disabled{
+	border-left: solid 1px #cccccc;
+	font-size: 16px;
+	text-align:right;
+	width: 96px;
+	color: #cccccc;
+	background-color: #ffffff;
+	line-height:16px;
+	padding: 0 0 0 9px;
+}
+.form_w38 .form_l{
+	width: 38%;
+}
+#findpass .form{
+	border: solid 1px #ddd;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#findpass .form:first-child{
+	margin-bottom: 13px;
+}
+#findpass .txt{
+	padding: 0 12px 0 12px;
+}
+.colsed{
+	width: 50px;
+	height: 49px;
+	position: absolute;
+	text-align: right;
+	right: 0;
+	top: 0;
+}
+.colsed em{
+	display: inline-block;
+  	background: url(../images/css_sprite.png) scroll no-repeat -214px -43px;
+	background-size:30rem;
+	width:20px;height:20px;
+	margin: 14px 9px 0 0;
+}
+#findpass .findcode{
+	padding-top:0;
+	padding-bottom: 0;
+	border: none;
+}
+#findpass .find{
+	display: inline-block;
+	width: 50%;
+	position: relative;
+	padding: 12px 0;
+	border: solid 1px #ddd;
+	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+  	border-radius: 5px;
+  	background-color: #fff;
+}
+#findpass .codeimg{
+	display: inline-block;
+	width: 73px;
+	vertical-align: top;
+	margin: 7px 0 0 8px;
+}
+#fillinfo .intro{
+	font-size: 12px;
+}
+#fillinfo .moreinfo{
+	background-color: #fff;
+	border-top: solid 1px #ddd;
+}
+#fillinfo .moreinfo h1{
+	height: 45px;
+	line-height: 45px;
+	border-bottom: solid 1px #ddd;
+	padding: 0 10px;
+}
+#fillinfo .moreinfo h1 em{
+	font-size: 14px;
+}
+#fillinfo .moreinfo h1 em.red{
+	color: #e83b3b;
+}
+#fillinfo .form_l{
+	width: 31%;
+}
+#fillinfo .moreinfo .flex{
+	padding: 13px 10px;
+	border-bottom: solid 1px #ddd;
+}
+#fillinfo .moreinfo .table{
+	height: 70px;
+}
+#fillinfo .moreinfo .intro{
+	color: #bbb;
+	padding: 0 0 0 17px;
+}
+.bottom .flex_item .btn{
+	background-color: #219946;
+	color: #fff;
+	font-size: 16px;
+	height: 49px;
+	line-break: 49px;
+	width: 100%;
+}
+.bottom .flex_item .btn.red{
+	background-color: #e83b3b;
+}
