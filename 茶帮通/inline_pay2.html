@@ -1,0 +1,177 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>在线支付页面</title>
+<script type="text/javascript" src="http://oteao.com:80//Front/common/js/jquery-1.8.0.min.js"></script>
+<link rel="stylesheet" href="css/inline_pay.css">
+<link rel="stylesheet" href="css/top_re.css">
+<div class="oteao_index">
+    <div class="oteao_header">
+        <div class="oteao_toolbarmain">
+            <div class="oteao_toolbar">
+                <div class="oteao_toolbarmain">
+                    <div class="home_link">
+                        <i></i>
+                        <span><a href="#">茶帮通首页</a></span>
+                    </div>
+                    <div class="login">
+                        <span>您好，欢迎来到茶帮通</span>
+                        <a href="#">请登录</a>
+                        <a href="#">免费注册</a>
+                    </div>
+                    <div class="topnav">
+                        <ul class="shortcut-box">
+                            <li class="dropdown">
+                                <div class="shortcut-account">
+                                    <a href="#">我的茶帮通<i class="ar-down"></i></a>
+                                </div>
+                                <div class="menu-box">
+                                    <a href="#">账户中心</a>
+                                    <!-- <a href="#">我的购物车</a> -->
+                                    <a href="#">我的收藏</a>
+                                    <a href="#">个人档案</a>
+                                </div>
+                            </li>
+                            <li class="v-space"></li>
+                            <li><a href="#">品牌介绍</a></li>
+                            <li class="v-space"></li>
+                            <li><a href="#">帮助中心</a></li>
+                            <li class="v-space"></li>
+                            <li>全国统一订购热线：<span class="orange">4000-996-3399</span></li>
+                        </ul>
+                    </div>
+                    <div class="save_link">
+                        <i></i>
+                        <span>收藏茶帮通</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cl"></div>
+        <div class="oteao_header_main">
+            <div class="oteao_searchplan">
+                <div class="oteao_logo fl">
+                    <a href="" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_bg">
+        <div class="online_payingplan">
+            <div class="shopping_state">
+                <div class="shopping_state_t">
+                    <ul>
+                        <li class="ml35">我的购物车 </li>
+                        <li class="ml70">填写核对订单信息 </li>
+                        <li class="ml110">成功提交订单</li>
+                        <li class="pingjia">商品评价</li>
+                    </ul>
+                    <div class="cl"></div>
+                </div>
+                <div class="s_progress">
+                    <div class="progress">
+                        <div class="progress3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="paying_info">
+                <div class="order_ok"></div>
+                <div class="check_ok">
+                    <p>订单提交成功，请您尽快付款，我们将为您快速送达！</p>
+                    <label>订单号：<span>1121212121</span></label>
+                    <label>应付金额：<span class="tred">212121212元</span></label>
+                    <label class="no-bor">预计到达时间：发货后 2-5 天</label>
+                </div>
+            </div>
+            <div class="paying_way">
+                <div class="paying_t">请选择在线支付方式</div>
+                <div class="zfb_pay">
+                    <span>支付宝</span>
+                    <div class="pay_zfb">
+                        <label for="" name="zfb"><i class="zfb"></i></label>
+                    </div>
+                </div>
+                <div class="cl"></div>
+                <p class="fs14 fb web_m"></p>
+                <div class="bank_box">
+                    <span class="b_t">银行卡</span>
+                    <ul class="pay_wy clearfix">
+                        <div class="your_bank">
+                            <div class="bank clearfix">
+                                <span class="bw">付款银行</span>
+                                <li>
+                                    <div class="bank icbc">
+                                        <label for="" name="icbc">
+                                            <i class="icbc"></i></label>
+                                    </div>
+                                </li>
+                                <span class="fh">
+                                <b></b>
+                                返回选择其他银行
+                            </span>
+                            </div>
+                            <div class="cg clearfix">
+                                <input type="radio" value="1" name="bank_type"><span>储蓄卡</span>
+                                <input type="radio" value="2" name="bank_type"><span>信用卡</span>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="cl"></div>
+                <div class="go_pay">
+                    <span class="btn"></span>
+                    <span style="display:none">请选择支付方式</span>
+                </div>
+            </div>
+            <div class="cl"></div>
+        </div>
+    </div>
+    <div class="cart_foot cl">
+        <a href="" target="_blank">关于我们</a>
+        <a href="" target="_blank">隐私申明</a>
+        <a href="" target="_blank">成为供应商</a>
+        <a href="" target="_blank">投诉与建议</a>
+        <a href="" target="_blank">醉品社区</a>
+        <a href="" target="_blank" class="not-br">友情链接</a>
+        <p>Copyright 2010 - 2014 oteao.com All Rights Reserved 闽ICP备10200063号-1</p>
+        <div class="cooper">
+            <span class="c1"></span>
+            <span class="c2"></span>
+            <span class="c3"></span>
+            <span class="c4"></span>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+$(function() {
+    $(".dropdown").hover(function() {
+        $(".menu-box").slideDown();
+    }, function() {
+        $(".menu-box").slideUp();
+    })
+})
+$(function() {
+    $(".morebank").click(function() {
+        $(this).hide();
+        $(".hide_bank").show();
+    })
+})
+$(function() {
+    $(".pay_wy li").click(function() {
+        $(".chose").removeClass('chose');
+        $(".zfb_c").removeClass('zfb_c');
+        $(this).addClass('chose');
+    });
+    $("i.zfb").click(function() {
+        $(".chose").removeClass('chose');
+        $(this).addClass('zfb_c')
+    });
+})
+$(function() {
+    $(".pay_wy li,.zfb").click(function() {
+        $("span.btn").addClass('btn2')
+    })
+})
+</script>
+
+</html>

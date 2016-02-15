@@ -1,0 +1,73 @@
+@charset "utf-8";
+.main {
+    width: 1200px;
+    margin: 0px auto;
+    padding-bottom: 30px;
+}
+.headerNav h2 {
+    font-size: 18px;
+}
+.headerNav {
+    height: 44px;
+    line-height: 44px;
+    color: #333;
+}
+.help_left {
+    background: url("../images/sidnav_bg.jpg") repeat scroll 0% 0% transparent;
+    width: 148px;
+    overflow: hidden;
+    border: 1px solid #DDD;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.help_dl {
+    width: 100%;
+    margin: 10px 0px 20px 15px;
+}
+.help_dl dt, .help_dl dd {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 20px;
+}
+.help_dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    height: 30px !important;
+    margin-left: -9px;
+    text-align: center;
+    background: url("../images/title_bg.jpg") no-repeat scroll 19px 1px transparent;
+    color: #FFF;
+}
+.help_dl dd:hover, .help_dl dd.checked {
+    color: #FFF;
+}
+.help_dl dt, .help_dl dd {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 20px;
+}
+.help_dl dd {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 20px;
+    width: 100px;
+    text-align: center;
+    margin-left: -10px;
+}
+.help_dl dd:hover a, .help_dl dd.checked a {
+    color: #555;
+}
+.help_dl dd a {
+    color: #555;
+}
+
+.main_bg_color {
+    background: none repeat scroll 0% 0% #F6F4E8;
+    width: 100%;
+    min-height:1000px;
+    margin-bottom: -42px;
+	height:auto;
+}

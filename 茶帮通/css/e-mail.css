@@ -1,0 +1,176 @@
+@charset "utf-8";
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.headerNav {
+    height: 44px;
+    line-height: 44px;
+    color: #333;
+}
+.headerNav h2 {
+    font-size: 18px;
+}
+.headerNav a {
+    color: #333;
+}
+.headerNav a:hover {
+    color: #ec2c39;
+}
+.help_left {
+    background: url("../images/sidnav_bg.jpg");
+    width: 148px;
+    padding-bottom: -2px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+.help_right {
+    width: 1035px;
+    height: 906px;
+}
+.help_dl {
+    width: 100%;
+    margin: 10px 0 20px;
+    margin-left: 15px;
+}
+.help_dl dt {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    width: 100px;
+    height: 30px !important;
+    margin-left: -9px;
+    text-align: center;
+    background: url(../images/title_bg.jpg) no-repeat;
+    color: white;
+    background-position: 19px 1px;
+}
+.help_dl dd {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 20px;
+    width: 100px;
+    text-align: center;
+    margin-left: -10px;
+}
+.help_dl dt, .help_dl dd {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 20px;
+}
+.help_dl dd a {
+    color: #555;
+}
+.help_dl dd:hover, .help_dl dd.checked {
+    color: #fff;
+}
+.help_dl dd:hover a, .help_dl dd.checked a {
+    color: #555;
+}
+/*member_e-mail_right_column*/
+.mr50 {
+    margin-right: 50px;
+}
+.mb25 {
+    margin-bottom: 25px;
+}
+.t66 {
+    color: #666666;
+}
+.t99 {
+    color: #999999;
+}
+.tc8 {
+    color: #ff9600;
+}
+.h205 {
+    height: 205px;
+}
+.member_title {
+    height: 35px;
+    font-size: 18px;
+    color: #444;
+    font-family: "microsoft yahei";
+    position: relative;
+}
+.member_e-mail_main {
+    overflow: hidden;
+    background: white;
+    height: 870px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+.member_e-mail_main li {
+    border-bottom: 1px solid #d0d0d0;
+}
+.member_e-mail_main .select li, .member_e-mail_main .select1 li {
+    border-bottom: 0;
+    margin-bottom: 20px;
+}
+.member_e-mail_main .select {
+    margin-left: 15px;
+    height: 90px;
+    margin-top: 30px;
+    width: 900px;
+    color: #666;
+}
+.member_e-mail_main .select1 {
+    margin-left: 15px;
+    height: 60px;
+    color: #666;
+}
+.member_e-mail_main li {
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: 0px;
+}
+.member_service {
+    background: url(../images/service.jpg) no-repeat;
+    height: 65px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+.check {
+    background: url(../images/check.png) no-repeat;
+    height: 23px;
+    width: 75px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.select li, .select1 li {
+    float: left;
+    position: relative;
+    width: 120px;
+}
+.but1, .but2, .but3 {
+    position: absolute;
+}
+/* end member_e-mail_right_column*/
+
+.line_title {
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+    line-height: 40px;
+    background: url("../images/line_jb_bg.jpg");
+    background-repeat: repeat-x;
+    padding-left: 20px;
+}
+.other_mail {
+    border-bottom: none!important;
+}
+.lt_fir {
+    line-height: 50px;
+}
+.li_fir {
+    border-top: 2px solid #2e1412;
+}
+.main_bg_color {
+    background: #f6f4e8;
+    width: 100%;
+    height: 1008px;
+    margin-bottom: -42px;
+}
+.word_tip {
+    margin-left: 25px!important;
+}
